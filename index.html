@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,zoom=1" >
+	<meta description="Manerr's website, a.k.a Paul T._  front-end web dev and Python programmer"/>
+	<title>Manerr's Website</title>
+<script type="text/javascript">
+// SJS : Simple JS Scroller
+//A simple scroll library for Vanilla JS (Browsers-integrated JavaScript) // its not really finished
+// Scroll size detector:
+	let ScrollSize={"normal":window.innerHeight/20,"slow":window.innerHeight/30,"fast":window.innerHeight/10};
+//Main function:
+function Scroll(id,Size){
+	let scrollTop=window.pageYOffset;//Scroll begin at that
+
+	let element=document.getElementById(id);
+
+	if (!element){
+			console.error("'#"+id.toString()+"' seems to not exists");
+			return undefined;
+	}
+	if (!Size){
+		Size=ScrollSize["normal"];
+	}
+
+	try{
+	let ScrollLoop=window.setInterval(function (){
+	if(document.getElementById(id).offsetTop-Size>scrollTop){
+					scrollTop+=Size;
+					window.scrollBy(0,Size);
+				}
+				else{
+					window.clearInterval(ScrollLoop);
+				}
+},10);
+
+	}
+	catch(e){
+		location.anchor=id;
+	}
+}
+
+
+function ScrolltoTop(e){
+	let ScrollLoop=window.setInterval(function (){
+	if(window.pageYOffset>0){
+					window.scrollBy(0,-ScrollSize["normal"]);
+				}
+				else{
+					scrollTop=0;
+					window.clearInterval(ScrollLoop);
+				}
+},10);
+}
+
+</script>
+<link rel="stylesheet" type="text/css" href="stylerepo.css"/>
+
+
+</head>
+<body>
+	<h1 style="position: fixed;display: none;z-index: 88;" id="secondlogo">Manerr</h1>
+	<a href="javascript:void(0);" onclick="ScrolltoTop();" id="jumper" style="position: fixed;display: none;z-index: 88;">↑</a>
+
+	<nav class="backbuttons"><button id="backbutton" onclick="document.getElementById('backbutton').style.display='none';document.getElementById('reader').style.display='none';">HOME</button></nav>
+	<main id="main">
+		
+			<h3 id="scrolldown">⏬<p>Scroll down</p>⏬</h3>
+
+		<div id="hello">
+			<div id="iam-and-name">
+			<div id="iam">
+				<h2 id="hello-message">Hello,</h2>
+				<h2 id="hello-iam">I'm</h2>
+			</div>
+			<h1 id="name">Manerr</h1>
+			</div>
+
+
+			<p id="canidothat"></p>
+		</div>
+
+		<nav id="mainnavbar">
+
+			<a href="javascript:void(0);" onclick="Scroll('gallery')">GALLERY</a>
+			<a href="javascript:void(0);" onclick="Scroll('blog');">BLOG</a>
+
+		</nav>
+	</main>
+
+<header class="second" id="blog">
+	<div><h1>Articles</h1><div class="simpleline"></div></div>
+</header>
+<!-- 
+<nav id="scroller">
+	<button id="left" onclick="scroll(-1);">&#8592;</button>
+	<button id="right" onclick="scroll(1);">&#8594;</button>
+</nav>
+ --><section class="dalist">
+	<ul>
+		<li>
+			<p class="date">22 April 2022</p>
+			<a href="article2.html" class="bgcontainer">
+				<div class="truecontainer">
+						<figure><img src="pictures/logobgmusic.png" class="spacingimage" /></figure>
+						<h1>Lmms is such a good DAW</h1>
+						<p>
+							Started making music,<br>
+							and that free+open-source <br>
+							audio workstation is just an awesome tool!
+						</p>
+				</div>
+				<div class="blurcontainer">
+					<br>
+				</div>
+			</a>
+			<a href="article2.html" class="more bottomlink"><span class="truelink">Read more</span></a>
+		</li>
+		
+		
+	
+		
+		<li>
+			<p class="date">20 March 2022</p>
+			<a href="article1.html" class="bgcontainer">
+				<div class="truecontainer">
+						<figure><img src="pictures/logobg.png" class="spacingimage" /></figure>
+						<h1>Just finished the website</h1>
+						<p>After a lot of tests, and many versions, it's finally out!<br>By the way it's the first article ;p</p>
+				</div>
+				<div class="blurcontainer">
+					<br>
+				</div>
+			</a>
+			<a href="article1.html" class="more bottomlink"><span class="truelink">Read more</span></a>
+		</li>
+	</ul>
+</section>
+	<p class="center">//It's blog and projects pages</p>
+
+<header class="second" id="gallery">
+	<div><h1>Gallery</h1><div class="simpleline"></div></div>
+</header>
+
+	<section id="boxofgallery">
+		<img src="pictures/untitled.jpg"/>
+		<img src="pictures/uforest.png"/>
+		<img src="pictures/173.png"/>
+		<img src="pictures/screen.png"/>
+	</section>
+	<p class="center">Click to open the picture</p>
+
+
+
+
+
+<footer>
+	
+	<p class="aligninfo">All right reserved, Paul T. A.K.A Manerr<br>2019-2022</p>
+	<section id="links">
+		<a href=""><img src="pictures/twitter.png"></a>
+		<a href=""><img src="pictures/github-icon.png" id="github-icon"></a>
+		<a href=""><img src="pictures/youtube.png"></a>
+	</section>
+
+
+</footer>
+
+	<div id="cookiealert">
+		<h2>That website use cookies</h2>
+		<p>If you are browsing on that website, you accept using cookie for user personalization.</p>
+		<button id="cookieclose">I accept, close now</button>
+	</div>
+
+
+
+	<script type="text/javascript" src="main.js">
+	</script>
+
+
+
+</body>
+</html>
