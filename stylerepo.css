@@ -91,7 +91,7 @@ body{margin: 0px;background: #121212;min-height: 100%;display: flex;flex-directi
 #jumper:active::after{content: "/";}
 #jumper:active::before{content: "\\";}
 
-main#main{min-height: 100vh;display: flex;flex-direction: column;width: 100%;margin : auto 0px;}
+main#main{min-height: 100vh;display: flex;flex-direction: column;width: 100%;}
 
 #mainnavbar {
 	color: white;flex-grow: 2;font-family: monospace;display: flex;flex-direction: row;justify-content: center;
@@ -112,7 +112,7 @@ main#main{min-height: 100vh;display: flex;flex-direction: column;width: 100%;mar
 
 #mainnavbar	a:hover{background: linear-gradient(90deg,white 25%,transparent 25%,transparent 75%,white 75%);}
 
-#hello{display: flex;flex-direction: column;justify-content: center;height: 100%;padding-bottom: 3vmin;}
+#hello{display: flex;flex-direction: column;justify-content: center;height: 100%;padding-bottom: 3vmin;margin : auto 0px;}
 
 #iam-and-name	{display: flex;flex-direction: row;justify-content: center;flex-grow: 0;perspective: 10vw;-webkit-perspective: 10vw;}
 
