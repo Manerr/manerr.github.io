@@ -91,7 +91,7 @@ body{margin: 0px;background: #121212;min-height: 100%;display: flex;flex-directi
 #jumper:active::after{content: "/";}
 #jumper:active::before{content: "\\";}
 
-main#main{min-height: 100vh;display: flex;flex-direction: column;width: 100%;}
+main#main{min-height: 100vh;display: flex;flex-direction: column;width: 100%;margin : auto 0px;}
 
 #mainnavbar {
 	color: white;flex-grow: 2;font-family: monospace;display: flex;flex-direction: row;justify-content: center;
