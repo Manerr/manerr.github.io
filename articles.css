@@ -32,6 +32,7 @@ body{
 	display: flex;flex-direction: column;justify-content: space-between;transition: 1s all;
 }
 
+iframe{display:flex !important;margin:auto !important;}
 
 body * {margin: 0px;padding: 0px;box-sizing: border-box;border: none;}
 
