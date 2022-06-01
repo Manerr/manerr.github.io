@@ -34,7 +34,7 @@ body{display: flex;flex-direction: row;justify-content: center;background: linea
 
 .black {color: white;background: black;transition: 1s color,1s background;-webkit-transition:1s color,1s background;}
 
-
+iframe{display: flex;margin: auto;max-width: 80vw;}
 
 #buttons{position: fixed;top: 1vh;left: 0px;display: flex;flex-direction: row;
 	justify-content: space-between;box-sizing: border-box;width: 100%;z-index: 9;overflow: hidden;margin: auto;}
