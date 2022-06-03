@@ -1,7 +1,7 @@
 
 		window.scrollTo(0,0);
 		let text_ido_idx=0;
-		let text_ido_text='Web designer, 3D maker, dev and Music Maker\n';
+		let text_ido_text='Music maker , Web designer, 3D maker and Python dev \n';
 		let text_ido_zone=document.getElementById("canidothat");
 
 		text_ido_zone.onclick=function (){
@@ -97,7 +97,7 @@ callLogoTwo();
 document.onscroll=callLogoTwo;
 
 
-		cookiealert=document.getElementById("cookiealert");
+cookiealert=document.getElementById("cookiealert");
 let cookie=localStorage.getItem("cookie");
 
 if(cookie!==null){cookiealert.style.display="none";}
