@@ -221,6 +221,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 			color: #dadadc;
 			font-weight: 100;
 			font-size: 1.21rem;
+			font-size: clamp(12px,4.45vw,22px);
 			animation: descriptionanim .38s ;
 			-webkit-animation: descriptionanim .38s ;
 		}
@@ -263,6 +264,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 			animation: .1s start1;
 			-webkit-animation: .3s start1;
 			font-family: "novasans";
+			font-size: 1.2rem;
 			font-size: clamp(.9rem,.9rem + 1.34vw,1.4rem);
 			color: white;text-decoration: none;
 			flex: 0 1 0;
@@ -316,7 +318,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 			margin: 0px;padding: 10px;
 /*			margin-top: -20px;*/
 			user-select: none;
-			color: #fafafa;font-family: "novasans",monospace;font-weight: 100;
+			color: #fafafa;font-family: "adventpro",monospace;font-weight: 100;
 			font-size: 1.45em;
 			text-shadow: .5rem .5rem .2rem #242724,.4rem .4rem .1rem #414142;
 			margin-bottom: 4px;
@@ -345,7 +347,9 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 
 
 		#intro p{
-			margin-top: 10vh;font-size: 65%;letter-spacing: 2px;
+			margin-top: 15vh;font-size: 75%;letter-spacing: 2px;
+			font-size: 1.2rem;
+			font-size: clamp(18px, 2.4vw, 1.28rem);
 		}
 
 		.redcolor{
@@ -450,7 +454,8 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 
 .project-box figure{
 	max-width: 128px;
-	height: fit-content;height: -webkit-fill-available;
+	height: 100%;
+
 	margin: 0px;text-align: center;
 	overflow: hidden;overflow: clip;
 	text-align: center;
@@ -473,13 +478,13 @@ img.project-image{
 
 .project-description{
 	display: inline-flex;flex-direction: column;
-	margin: 4px;margin-left: 2.3vw;min-width: 200px;
+	margin: 4px;margin-left: 2.3vw;min-width: 180px;
 }
 
 .project-description p{
 margin: 0px;margin-bottom: 5px;
 font-family: "novasans";font-weight: 100;
-color: #eaeaef;font-size: 90%;
+color: #eaeaef;font-size: 1.15rem;
 	
 }
 
@@ -553,4 +558,42 @@ footer a.buttonlink img:hover{
 
 
 /*MEDIA QUERIES ARE HERE*/
+@media all and (max-width : 768px) {
 
+	#intro h2{
+		font-size: 1.2em;
+	}
+}
+
+@media all and (max-width : 425px) {
+
+	#description{
+		font-size: 17px;
+	}
+
+	.project-description{
+/*		font-size: 18px;*/
+	}
+
+	.project-title{
+		font-size: 22px;
+	}
+
+	.abouttitle{
+		font-size: 1.2em;text-align: center;
+	}
+
+	#intro h2{
+		font-size: 1.15em;
+	}
+
+	#intro p{
+/*		font-size: 55%;*/
+
+	}
+
+	#checkit{
+		font-size: 90%;
+	}
+
+}
