@@ -78,7 +78,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 		}
 
 		main{
-			background: linear-gradient(180deg, transparent,#151818 95%),url("images/bgtrue.jpg");
+			background: linear-gradient(180deg, transparent,#151818 95%),url("images/bgtrue.webp");
 			background-size: cover;
 			flex: 1;
 			background-position: center;
