@@ -147,6 +147,12 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 			text-decoration: none;
 			margin: 2px;
 			max-width: 48px;
+			position: relative;
+			display: block;
+			cursor: pointer;
+			z-index: 2;
+
+
 		}
 
 		a.buttonlink img{
@@ -370,16 +376,8 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 
 
 
-
-
-
-
-
-
-
 		#projects{
-
-
+			position: relative;z-index: 1;
 		}
 
 		#projects article{
@@ -514,7 +512,7 @@ color: #eaeaef;font-size: 1.15rem;
 
 footer{
 	position: relative;
-	padding-top: 18vh;margin-top: -10vh;z-index: -1;
+	padding-top: 18vh;margin-top: -10vh;
 	font-size: 1.1rem;
 	background: linear-gradient(#151818,black 10%);
 	box-shadow: 0px -1vh 1vh #121212;
