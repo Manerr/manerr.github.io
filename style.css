@@ -389,7 +389,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 
 		#checkit img{
 
-			max-height: 1.6rem;
+			max-height: 1.6rem;width: auto;
 			vertical-align: text-bottom;
 			margin: 0px;
 		}
