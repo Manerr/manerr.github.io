@@ -15,6 +15,7 @@ src : url("fonts/novasans.ttf");
 		:root{
 			min-height: 100vh;
 			min-width: fit-content;
+			min-width: -moz-fit-content;
 		}
 
 
@@ -82,7 +83,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 		}
 
 		main{
-			background: linear-gradient(180deg,#000000cc , transparent,#151818 95%),radial-gradient(transparent,#242424f5),url("images/bgtrue.webp");
+			background: linear-gradient(180deg,#000000cc , transparent,#151818 95%),radial-gradient(transparent,#242424),url("images/bgtrue.webp");
 			background-size: cover;
 			flex: 1;
 			background-position: center;
@@ -109,6 +110,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 			top: 0px;right: 0px;
 			transition: .3s all;
 			backdrop-filter: blur(4px);
+			-webkit-backdrop-filter: blur(4px);
 			padding-bottom: 5px;
 			border-bottom-left-radius: 10px;
 			border-bottom-right-radius: 10px;
@@ -131,7 +133,7 @@ body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
 
 
 
-		#logonav{
+		.logonav{
 			max-height: 2rem;margin-left: 8px;border-radius: 28%;
 			padding: 6px 0;
 		}
@@ -176,10 +178,10 @@ background: inherit;
 
 		}
 
-		header a#firstbuttonlink{
+		header a.firstbuttonlink{
 			margin-left: auto;
 		}
-		header a#firstbuttonlink img{
+		header a.firstbuttonlink img{
 			border-radius: 50%;
 		}
 
@@ -207,8 +209,10 @@ background: inherit;
 
 
 		#hi{
+			max-width: 90%;
 			font-weight: 100;
 			user-select: none;
+			-webkit-user-select: none;
 			position: relative;
 			left: -2px;top: -2px;
 			margin-top: 32vh !important;
@@ -262,6 +266,7 @@ background: inherit;
 		#description{
 			pointer-events: none;
 			user-select: none;
+			-webkit-user-select: none;
 			font-family: "novasans",sans-serif;
 			padding: 1vw;
 			text-align: center;
@@ -299,6 +304,7 @@ background: inherit;
 
 		#twolinks{
 			user-select: none;
+			-webkit-user-select: none;
 			flex: 0;
 			margin-bottom:  8vh;
 			margin-top: auto;
@@ -354,7 +360,7 @@ background: inherit;
 /*			position: relative;left: .4rem;*/
 			background: #1a1a1a;
 			border-radius: 7px;
-			border: 2px solid #209ceec9;
+			border: 2px solid #209cee;
 /*			border: 2px solid white;*/
 
 			font-family: "novasans",sans-serif;
@@ -374,7 +380,7 @@ background: inherit;
     		content: "";
     		display: block;
     		width: 1.2rem;height: 1.2rem;
- 			background: #209ceec9;
+ 			background: #209cee;
  			z-index: -1;
  			border-radius: 50%;
  			border: 2px solid white;
@@ -396,6 +402,7 @@ background: inherit;
 			margin: 0px;padding: 10px;
 /*			margin-top: -20px;*/
 			user-select: none;
+			-webkit-user-select: none;
 			color: #fafafa;font-family: "adventpro",monospace;font-weight: 100;
 			font-size: 1.45em;
 			text-shadow: .5rem .5rem .2rem #242724,.4rem .4rem .1rem #414142;
@@ -418,7 +425,7 @@ background: inherit;
 
 		#intro h2{
 			font-weight: 100 !important;max-width: 85%;text-align: center;margin: auto;
-			font-size: 1.4rem;
+			font-size: 1.32rem;
 			font-size: clamp(1em, 7.5vw, 1.5em);
 		}
 
@@ -604,6 +611,7 @@ footer p{
 	font-family: "novasans";
 	font-size: 1.1rem;
 	user-select: none;
+	-webkit-user-select: none;
 }
 
 footer p#copy{
@@ -641,7 +649,7 @@ footer a.buttonlink img:hover{
 @media all and (max-height : 420px){
 	h1#hi{margin-top: 27vh !important;}
 
-	#logonav{
+	.logonav{
 		max-height: 1.5em;
 	}
 
@@ -656,7 +664,7 @@ footer a.buttonlink img:hover{
 @media all and (max-width : 768px) {
 
 	#intro h2{
-		font-size: 1.2em;
+		font-size: 1.15em;
 	}
 
 	header span{
