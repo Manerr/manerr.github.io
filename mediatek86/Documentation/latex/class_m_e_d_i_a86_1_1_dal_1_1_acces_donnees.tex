@@ -1,0 +1,240 @@
+\doxysection{MEDIA86.\+Dal.\+Acces\+Donnees Class Reference}
+\hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees}{}\label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+
+
+Classe unique qui sert d\textquotesingle{}intermédiaire entre le controle et la base de données (en faisant appel à bddmanager)  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a624096672798ea0ca58e4313b0180632}{Tester\+Connexion}} (string login, string pwd)
+\begin{DoxyCompactList}\small\item\em Teste la connexion pour les identifiants donnés. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} $>$ \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_ab00b35e5ba0e89bd2776a1dbb95011e8}{Get\+Les\+Personnels}} ()
+\begin{DoxyCompactList}\small\item\em Retourne une liste des personnels. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a2e6f77d19cdd397fda43efea088c9ec3}{Get\+Un\+Personnel}} (int index)
+\begin{DoxyCompactList}\small\item\em Retourne un personnel pour une id donné. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af1f78589276204edb326a88f998da7d9}{Get\+IDService}} (\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} personnel)
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}identifiant du service dans la table service pour un personnel donné. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a695e7b86c0013bb91683769ad36c46df}{Add\+Un\+Personnel}} (\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} personnel)
+\begin{DoxyCompactList}\small\item\em Ajoute un personnel dans la base de données. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_aea4e94a93fa9742eef0884b0576ace7f}{Editer\+Un\+Personnel}} (\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} personnel)
+\begin{DoxyCompactList}\small\item\em Édite le personnel dans la base de donnée -\/\texorpdfstring{$>$}{>} requête UDPATE. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0a80fc2fd32d8f66151190ab3063bd0b}{Suppr\+Un\+Personnel}} (int id)
+\begin{DoxyCompactList}\small\item\em Supprime le personnel pour un id donné dans la base de donnée -\/\texorpdfstring{$>$}{>} requête DELETE. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} $>$ \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a038ea933434c72799693b1d9caa7c103}{Get\+Les\+Absences}} (int id)
+\begin{DoxyCompactList}\small\item\em Renvoie la liste des absences pour une id donnée. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0d2ac3f914a6ebe054528c269153d2d2}{Get\+Une\+Absence}} (int idabsence)
+\begin{DoxyCompactList}\small\item\em Renvoie une absence pour un id donné. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a8746417766df9450409919b02e3c393c}{Suppr\+Absence\+Personnel}} (int idabsence)
+\begin{DoxyCompactList}\small\item\em Supprimer une absence dont l\textquotesingle{}ID est donné \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a278c88c8bf56b47005914ba8227d08f1}{Add\+Une\+Absence}} (\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} absence)
+\begin{DoxyCompactList}\small\item\em Modifie une absence existante Vérifie si le créneau est valide et ne chevauche aucun créneau. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af2ab700c38ae2d9249f248365dc273b1}{Edit\+Une\+Absence}} (\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} absence)
+\begin{DoxyCompactList}\small\item\em Modifie une absence existante Vérifie si le créneau est valide et ne chevauche aucun créneau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe unique qui sert d\textquotesingle{}intermédiaire entre le controle et la base de données (en faisant appel à bddmanager) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a278c88c8bf56b47005914ba8227d08f1}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!AddUneAbsence@{AddUneAbsence}}
+\index{AddUneAbsence@{AddUneAbsence}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{AddUneAbsence()}{AddUneAbsence()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a278c88c8bf56b47005914ba8227d08f1} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Add\+Une\+Absence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}}}]{absence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Modifie une absence existante Vérifie si le créneau est valide et ne chevauche aucun créneau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em absence} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a695e7b86c0013bb91683769ad36c46df}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!AddUnPersonnel@{AddUnPersonnel}}
+\index{AddUnPersonnel@{AddUnPersonnel}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{AddUnPersonnel()}{AddUnPersonnel()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a695e7b86c0013bb91683769ad36c46df} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Add\+Un\+Personnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}}}]{personnel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ajoute un personnel dans la base de données. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personnel} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_aea4e94a93fa9742eef0884b0576ace7f}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!EditerUnPersonnel@{EditerUnPersonnel}}
+\index{EditerUnPersonnel@{EditerUnPersonnel}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{EditerUnPersonnel()}{EditerUnPersonnel()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_aea4e94a93fa9742eef0884b0576ace7f} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Editer\+Un\+Personnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}}}]{personnel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Édite le personnel dans la base de donnée -\/\texorpdfstring{$>$}{>} requête UDPATE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personnel} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af2ab700c38ae2d9249f248365dc273b1}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!EditUneAbsence@{EditUneAbsence}}
+\index{EditUneAbsence@{EditUneAbsence}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{EditUneAbsence()}{EditUneAbsence()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af2ab700c38ae2d9249f248365dc273b1} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Edit\+Une\+Absence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}}}]{absence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Modifie une absence existante Vérifie si le créneau est valide et ne chevauche aucun créneau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em absence} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af1f78589276204edb326a88f998da7d9}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!GetIDService@{GetIDService}}
+\index{GetIDService@{GetIDService}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{GetIDService()}{GetIDService()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_af1f78589276204edb326a88f998da7d9} 
+static int MEDIA86.\+Dal.\+Acces\+Donnees.\+Get\+IDService (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}}}]{personnel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retourne l\textquotesingle{}identifiant du service dans la table service pour un personnel donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personnel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a038ea933434c72799693b1d9caa7c103}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!GetLesAbsences@{GetLesAbsences}}
+\index{GetLesAbsences@{GetLesAbsences}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{GetLesAbsences()}{GetLesAbsences()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a038ea933434c72799693b1d9caa7c103} 
+static List$<$ \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} $>$ MEDIA86.\+Dal.\+Acces\+Donnees.\+Get\+Les\+Absences (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renvoie la liste des absences pour une id donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_ab00b35e5ba0e89bd2776a1dbb95011e8}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!GetLesPersonnels@{GetLesPersonnels}}
+\index{GetLesPersonnels@{GetLesPersonnels}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{GetLesPersonnels()}{GetLesPersonnels()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_ab00b35e5ba0e89bd2776a1dbb95011e8} 
+static List$<$ \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} $>$ MEDIA86.\+Dal.\+Acces\+Donnees.\+Get\+Les\+Personnels (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retourne une liste des personnels. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0d2ac3f914a6ebe054528c269153d2d2}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!GetUneAbsence@{GetUneAbsence}}
+\index{GetUneAbsence@{GetUneAbsence}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{GetUneAbsence()}{GetUneAbsence()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0d2ac3f914a6ebe054528c269153d2d2} 
+static \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_absence}{Absence}} MEDIA86.\+Dal.\+Acces\+Donnees.\+Get\+Une\+Absence (\begin{DoxyParamCaption}\item[{int}]{idabsence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renvoie une absence pour un id donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idabsence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a2e6f77d19cdd397fda43efea088c9ec3}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!GetUnPersonnel@{GetUnPersonnel}}
+\index{GetUnPersonnel@{GetUnPersonnel}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{GetUnPersonnel()}{GetUnPersonnel()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a2e6f77d19cdd397fda43efea088c9ec3} 
+static \mbox{\hyperlink{class_m_e_d_i_a_t_e_k86_1_1_modele_1_1_personnel}{Personnel}} MEDIA86.\+Dal.\+Acces\+Donnees.\+Get\+Un\+Personnel (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retourne un personnel pour une id donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a8746417766df9450409919b02e3c393c}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!SupprAbsencePersonnel@{SupprAbsencePersonnel}}
+\index{SupprAbsencePersonnel@{SupprAbsencePersonnel}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{SupprAbsencePersonnel()}{SupprAbsencePersonnel()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a8746417766df9450409919b02e3c393c} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Suppr\+Absence\+Personnel (\begin{DoxyParamCaption}\item[{int}]{idabsence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Supprimer une absence dont l\textquotesingle{}ID est donné 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idabsence} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0a80fc2fd32d8f66151190ab3063bd0b}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!SupprUnPersonnel@{SupprUnPersonnel}}
+\index{SupprUnPersonnel@{SupprUnPersonnel}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{SupprUnPersonnel()}{SupprUnPersonnel()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a0a80fc2fd32d8f66151190ab3063bd0b} 
+static void MEDIA86.\+Dal.\+Acces\+Donnees.\+Suppr\+Un\+Personnel (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Supprime le personnel pour un id donné dans la base de donnée -\/\texorpdfstring{$>$}{>} requête DELETE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a624096672798ea0ca58e4313b0180632}\index{MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}!TesterConnexion@{TesterConnexion}}
+\index{TesterConnexion@{TesterConnexion}!MEDIA86.Dal.AccesDonnees@{MEDIA86.Dal.AccesDonnees}}
+\doxysubsubsection{\texorpdfstring{TesterConnexion()}{TesterConnexion()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_dal_1_1_acces_donnees_a624096672798ea0ca58e4313b0180632} 
+static bool MEDIA86.\+Dal.\+Acces\+Donnees.\+Tester\+Connexion (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{pwd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Teste la connexion pour les identifiants donnés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+{\em pwd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pault/\+Desktop/\+PRO CODE HERE/\+VS/repos/\+MEDIATek86 -\/ V1/\+Dal/Acces\+Donnees.\+cs\end{DoxyCompactItemize}

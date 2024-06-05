@@ -1,0 +1,102 @@
+\doxysection{gestionbdd.\+Bdd\+Manager Class Reference}
+\hypertarget{classgestionbdd_1_1_bdd_manager}{}\label{classgestionbdd_1_1_bdd_manager}\index{gestionbdd.BddManager@{gestionbdd.BddManager}}
+
+
+Singleton \+: connexion à la base de données et exécution des requêtes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager_a05a1072b9685986cbd9861254d4892fd}{Req\+Controle}} (string string\+Query)
+\begin{DoxyCompactList}\small\item\em Exécution d\textquotesingle{}une requête de type LCT (begin transaction...) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager_a33c4039ffc88b3384c31887cf4d6fbe0}{Req\+Update}} (string string\+Query, Dictionary$<$ string, object $>$ parameters=null)
+\begin{DoxyCompactList}\small\item\em Exécution d\textquotesingle{}une requête de type LMD (insert, update, delete) \end{DoxyCompactList}\item 
+List$<$ Object\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager_ac2f023cfebb23fcad6f579b1adb4899a}{Req\+Select}} (string string\+Query, Dictionary$<$ string, object $>$ parameters=null)
+\begin{DoxyCompactList}\small\item\em Execution d\textquotesingle{}une requête de type LID (select) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager}{Bdd\+Manager}} \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager_a9a703c7e28df70ef4b03c37a69e85b9f}{Get\+Instance}} (string string\+Connect)
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une seule instance de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton \+: connexion à la base de données et exécution des requêtes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgestionbdd_1_1_bdd_manager_a9a703c7e28df70ef4b03c37a69e85b9f}\index{gestionbdd.BddManager@{gestionbdd.BddManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!gestionbdd.BddManager@{gestionbdd.BddManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \label{classgestionbdd_1_1_bdd_manager_a9a703c7e28df70ef4b03c37a69e85b9f} 
+static \mbox{\hyperlink{classgestionbdd_1_1_bdd_manager}{Bdd\+Manager}} gestionbdd.\+Bdd\+Manager.\+Get\+Instance (\begin{DoxyParamCaption}\item[{string}]{string\+Connect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Création d\textquotesingle{}une seule instance de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Connect} & chaine de connexion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+instance unique de la classe
+\end{DoxyReturn}
+\Hypertarget{classgestionbdd_1_1_bdd_manager_a05a1072b9685986cbd9861254d4892fd}\index{gestionbdd.BddManager@{gestionbdd.BddManager}!ReqControle@{ReqControle}}
+\index{ReqControle@{ReqControle}!gestionbdd.BddManager@{gestionbdd.BddManager}}
+\doxysubsubsection{\texorpdfstring{ReqControle()}{ReqControle()}}
+{\footnotesize\ttfamily \label{classgestionbdd_1_1_bdd_manager_a05a1072b9685986cbd9861254d4892fd} 
+void gestionbdd.\+Bdd\+Manager.\+Req\+Controle (\begin{DoxyParamCaption}\item[{string}]{string\+Query}{}\end{DoxyParamCaption})}
+
+
+
+Exécution d\textquotesingle{}une requête de type LCT (begin transaction...) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Query} & requête\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgestionbdd_1_1_bdd_manager_ac2f023cfebb23fcad6f579b1adb4899a}\index{gestionbdd.BddManager@{gestionbdd.BddManager}!ReqSelect@{ReqSelect}}
+\index{ReqSelect@{ReqSelect}!gestionbdd.BddManager@{gestionbdd.BddManager}}
+\doxysubsubsection{\texorpdfstring{ReqSelect()}{ReqSelect()}}
+{\footnotesize\ttfamily \label{classgestionbdd_1_1_bdd_manager_ac2f023cfebb23fcad6f579b1adb4899a} 
+List$<$ Object\mbox{[}$\,$\mbox{]}$>$ gestionbdd.\+Bdd\+Manager.\+Req\+Select (\begin{DoxyParamCaption}\item[{string}]{string\+Query}{, }\item[{Dictionary$<$ string, object $>$}]{parameters}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Execution d\textquotesingle{}une requête de type LID (select) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Query} & requête\\
+\hline
+{\em parameters} & dictoinnaire contenant les parametres\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+liste de tableaux d\textquotesingle{}objets contenant les valeurs des colonnes
+\end{DoxyReturn}
+\Hypertarget{classgestionbdd_1_1_bdd_manager_a33c4039ffc88b3384c31887cf4d6fbe0}\index{gestionbdd.BddManager@{gestionbdd.BddManager}!ReqUpdate@{ReqUpdate}}
+\index{ReqUpdate@{ReqUpdate}!gestionbdd.BddManager@{gestionbdd.BddManager}}
+\doxysubsubsection{\texorpdfstring{ReqUpdate()}{ReqUpdate()}}
+{\footnotesize\ttfamily \label{classgestionbdd_1_1_bdd_manager_a33c4039ffc88b3384c31887cf4d6fbe0} 
+void gestionbdd.\+Bdd\+Manager.\+Req\+Update (\begin{DoxyParamCaption}\item[{string}]{string\+Query}{, }\item[{Dictionary$<$ string, object $>$}]{parameters}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Exécution d\textquotesingle{}une requête de type LMD (insert, update, delete) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Query} & requête\\
+\hline
+{\em parameters} & dictionnire contenant les parametres\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pault/\+Desktop/\+PRO CODE HERE/\+VS/repos/\+MEDIATek86 -\/ V1/\+BDDMANAGER/Bdd\+Manager.\+cs\end{DoxyCompactItemize}
