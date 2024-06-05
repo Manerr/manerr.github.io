@@ -18,9 +18,29 @@
 		html{
 			min-height: 100vh;
 			width: 100%;
+
+
+		  --s: 120px; /* control the size*/
+		  
+		  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+		  background:
+		    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+		    conic-gradient(#0f9177 25%,#fdebad 0 50%,#d34434 0 75%,#b5d999 0);
+		  background-size: var(--s) var(--s); 
+
 		}
 
+
+		a,p{
+			font-weight: 100;
+		}
+
+
 		body{
+
+			background-color: rgba(255,255,255,.75);
+
+
 			margin: 0px;height: 100vh;
 			width: 100%;
 			font-family: "worksans",system-ui,sans-serif;
@@ -29,7 +49,32 @@
 			justify-content: center;
 			align-items: center;
 			overflow: hidden;
+
+			display:  flex;
+			flex-direction: column;
+			justify-content: center;
+
 		}
+
+
+		a {
+			text-decoration: none;
+			color: darkblue;
+		}
+
+		nav{
+			max-width: 800px;
+
+			display: flex;
+			flex-direction: column;
+
+		}
+
+		video{
+			max-width: 400px;
+			height: auto;
+		}
+
 
 
 
@@ -39,16 +84,23 @@
 </head>
 <body>
 
+	<h1>MEDIATek 86</h1>
+	<p>Application de gestion du personnel</p>
+
 
 	<nav>
 		
-		<video src="plz.mp4" >
+		<h2>Vidéo d'utilisation</h2>
+
+		<video src="plz.mp4" controls>
 				
 		</video>
 
+		<h2>Liens relatifs</h2>
+
 		<a href="https://github.com/Manerr/MEDIATek86">Dépot GitHub</a>
 		<a href="Rapport - MediaTEK86.pdf">Rapport au format pdf</a>
-		<a href="/Documentation/index.html">Documentation en ligne</a>
+		<a href="/Documentation/html/index.html">Documentation en ligne</a>
 
 
 
