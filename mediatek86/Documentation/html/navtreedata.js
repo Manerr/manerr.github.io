@@ -27,10 +27,11 @@ var NAVTREE =
   [ "Documentation - MEDIATek86", "index.html", [
     [ "MediaTek86", "index.html", "index" ],
     [ "MediaTek86", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html", [
-      [ "Installation", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md7", [
-        [ "Prérequis", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md8", null ],
-        [ "Processus d'installation", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md9", null ],
-        [ "Utilisation de l'application", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md10", null ]
+      [ "!!! Windows defender détecte cette application comme ... un trojan ... utilisez un vm pour la tester.", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md8", null ],
+      [ "Installation", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md9", [
+        [ "Prérequis", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md10", null ],
+        [ "Processus d'installation", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md11", null ],
+        [ "Utilisation de l'application", "md__c_1_2_users_2pault_2_desktop_2_p_r_o_01_c_o_d_e_01_h_e_r_e_2_v_s_2repos_2_m_e_d_i_a_tek86_01-_01_v1_2readme.html#autotoc_md12", null ]
       ] ]
     ] ],
     [ "Packages", "namespaces.html", [
