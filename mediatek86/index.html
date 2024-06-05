@@ -41,14 +41,14 @@
 			background-color: rgba(255,255,255,.75);
 
 
-			margin: 0px;height: 100vh;
+			margin: 0px;min-height: 100vh;
 			width: 100%;
 			font-family: "worksans",system-ui,sans-serif;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			overflow: hidden;
+			
 
 			display:  flex;
 			flex-direction: column;
@@ -65,14 +65,30 @@
 		nav{
 			max-width: 800px;
 
+			padding: 8% 4%;
+
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+
+
+			border: 1px solid #aaa;
+
+			border-radius: 3px;
+
+			background-color: rgba(250,250,250,.8);
+
+			width: 70vw;
+
+			min-height: 600px;
+			height: 60vh;
 
 		}
 
 		video{
 			max-width: 400px;
 			height: auto;
+
 		}
 
 
@@ -89,10 +105,21 @@
 
 
 	<nav>
+
+
+		<p>
+			
+			Cet atelier de première année consistait à créer une application pour MEDIATEK86 gérant des personnels et leurs absences.<br>
+			C'est un atelier fait au cours de ma première année en BTS SIO.<br>
+			Application codée en C#, désigné par mes soins tout en utilisant Visual Studio 2022, MySQL et PhpMyAdmin sur Wampserver.<br>
+			Vous trouverez ci dessous le compte rendu au format pdf, ainsi que le dépot et la documentation en ligne.<br>
+		</p>
+
+
 		
 		<h2>Vidéo d'utilisation</h2>
 
-		<video src="plz.mp4" controls preload="none">
+		<video src="plz.mp4" controls preload="metadata">
 				
 		</video>
 
