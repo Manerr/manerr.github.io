@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>manerr.github.io Blog - Programming on a 30 years old hardware</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="author" value="Manerr">
+	<meta name="description" content="Blog article - Programming on a 30 years old hardware, the Nintendo GameBoy. - manerr.github.io">
+	<meta name="og:description" content="Blog article - Programming on a 30 years old hardware, the Nintendo GameBoy. - manerr.github.io">
+
+	<meta itemprop="name" content="Blog article - Programming on a 30 years old hardware, the Nintendo GameBoy. - manerr.github.io">
+	
+	<meta name="keywords" content="gamedev, devlog, gameboy, retrogaming, portfolio, bts sio, webdev, development, webdesigner, frontenddev, frontend">
+
+	<link rel="icon" type="image/png" href="../favicon.png">
+
+	<meta name="twitter:title" content="Blog article - Programming on a 30 years old hardware, the Nintendo GameBoy. - manerr.github.io">
+	<meta name="twitter:creator" content="@Manerr">
+	<meta name="twitter:site" content="manerr.github.io">
+
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" type="text/css" href="articles.css" />
+	<link rel="stylesheet" type="text/css" href="../mediaquery.css" />
+	<script type="text/javascript">
+		onunload = function(){
+			scrollTo(0,0);
+			return false;
+		}
+		if(window.history.scrollRestauration){
+			window.history.scrollRestauration = "manual";
+			scrollTo(0,0);
+		}
+
+	</script>
+
+</head>
+<body class="nightmode">
+
+	<script type="text/javascript" src="../onloadlights.js"></script>
+
+
+	<header>
+
+		<div>
+		
+		<h2>
+			
+			<a href="index.html" id="homebutton">Manerr</a>
+			
+		</h2>
+
+		<nav>
+				
+			<a href="javascript:void(0)" id="changestyle"><img src="../resources/darkmode.svg" /></a>
+
+		</nav>
+
+		</div>
+
+	</header>
+
+	
+
+
+
+
+
+
+	</section>	
+
+	<section class="screenpage" id="article">
+		<article id="blog">
+		
+		<h2 class="title">Green pixels are addictive<span>_</span></h2>
+		<p class="date">06/10/2024</p>
+
+	<p class="desc">
+		When you speak about C to someone, he (or she) will generally think about low level programming.<br/>
+		That's right, but no one will actually think (They'll think about OpenGL, SDL2 or high performance apps.) you're making things on a low-end hardware too, the Nintendo Game Boy from 1989. <br/>
+	</p> 
+	<figure class="articleimage">
+		<img src="articlegb1.webp"/>
+		<figcaption>The first real portable game handheld.</figcaption>
+	</figure>
+
+	<p class="desc">
+		Well, when you have only 8-16kb of RAM, a ~9MHz CPU, making games and apps push you to the limits (not only hardwares but programming ones too).<br/><br/><br/>
+		Instead of writing pixel by pixel on the screen, the hardware lets you only put sprites and tiles in memory, and then putting them on screen.<br/>
+		Which make sense when you know that you couldn't anyway store in the RAM even a single frame-buffer (160*144 = 23,040kB...).<br/><br/><br/>
+		Some months ago, I'd made a JS game, <a href="https://github.com/Manerr/Pyxio">Pyxio</a>, which I was not satisfied at all.... it was not really well written and was not well optimized.<br/>
+		I've tried to port the same logic/idea on the little GB with GBDK (a modern Game-Boy SDK), and honestly, I was a bit shocked by the fact that with 9Mhz, that device was a JS canvas killer. (same game would take 4-5% of my 3.4GHz CPU which means 136MHz vs 9MHz for the same result (I know there's differences... ))
+		<br/><br/>
+		Here's a screenshot of the current project (game engine is done, and it now needs more objects and a small scenario). 
+	</p>
+
+	<figure class="articleimage">
+		<img src="articlegb2.webp"/>
+		<figcaption>Sometimes color is not important.</figcaption>
+	</figure>
+
+
+		<div class="hundred">	
+			<a href="../index.html" id="jumper" class="jumper reverted"><span><img src="../resources/arrow.svg" /></span><span> Home</span></a>
+		</div>
+
+
+	</article>
+
+		<footer>
+			<p class="desc">
+				All rights reserved Paul.T_ a.k.a Manerr &copy; 2023-2024
+			</p>
+		</footer>
+
+	</section>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../scriptarticle.js" defer="defer">
+</script>
+
+
+</body>
+
+
+
+</html>

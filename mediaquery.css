@@ -1,0 +1,132 @@
+@media screen and ( max-width: 60rem ){
+
+	body h2.title{
+		font-size: 3.12rem;
+	}
+
+	body .desc{
+		font-size: 1.15rem;
+	}
+
+	body #homebutton{
+		font-size: 1.72rem;
+	}
+	.jumper{
+		font-size: 1.3rem;
+	}
+
+
+}
+
+@media screen and ( max-width: 40rem ){
+
+	body #homebutton{
+		font-size: 1.56rem;
+	}
+
+
+	body main,body article {
+    width: 92%;
+	}
+
+	body header{
+/*		padding-top: 1rem;*/
+	}
+
+	header h2 {
+		margin-left: 1rem;
+	}
+	header nav{
+		margin-right: 1rem;
+	}
+
+	body h2.title{
+		font-size: 2.85rem;
+	}
+
+	body .desc{
+		font-size: 1.08rem;
+	}
+
+	#page2{
+		padding-top: 7vh;
+	}
+	.jumper{
+		font-size: 1.23rem;
+        margin: .3rem;
+	}
+
+
+}
+
+@media screen and ( max-width: 30rem ){
+
+/*	header #accueilbutton{
+		display: inline-block;
+	}
+*/
+	body #homebutton{
+		font-size: 1.48rem;
+	}
+
+
+
+	#page3{
+		padding-top: 7vh;
+	}
+
+
+	header h2 {
+		margin-left: .4rem;
+	}
+	header nav{
+		margin-right: .4rem;
+	}
+
+
+	body h2.title{
+		font-size: 2.1rem;
+	}
+
+	body .desc{
+		font-size: 1rem;
+	}
+
+	.jumper{
+		font-size: 1.2rem;
+	}
+
+	#projects ul a{
+		font-size: 1rem;
+	}
+
+	body header nav a{
+		font-size: 1.1rem;
+	}
+
+}
+
+
+
+@media screen and ( max-width: 22rem ){
+
+	#page4 .desc{
+		margin-bottom: 4rem;
+	}
+
+	#page4 .jumper{
+	    margin-top: .5rem;
+	    margin-right: 0px;
+	}
+
+	body #homebutton{
+		font-size: 1.18rem;
+	}
+
+	body header nav a{
+		font-size: 1.03rem;
+	}
+
+
+
+}
