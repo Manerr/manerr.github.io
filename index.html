@@ -1,173 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8"/>
 	<title>Manerr's portfolio</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="author" value="Manerr">
-	<meta name="description" content="Manerr's Portfolio, junior frontend dev and programmer. You'll find here some of my projects and links to my social medias." value="Manerr's Porfolio, junior frontend dev and programmer. You'll find here some of my projects and links to my social medias.">
-	<meta name="og:description" content="Manerr's Portfolio, junior frontend dev and programmer. You'll find here some of my projects and links to my social medias." value="Manerr's Porfolio, junior frontend dev and programmer. You'll find here some of my projects and links to my social medias.">
+	<meta name="description" content="Portfolio et blog. Paul T_, développeur frontend.">
+	<meta name="og:description" content="Portfolio et blog. Paul T_, développeur frontend.">
 
-	<meta itemprop="name" content="Manerr's Portfolio, junior frontend dev and programmer. You'll find here some of my projects and links to my social medias.">
+	<meta itemprop="name" content="Portfolio et blog. Paul T_, développeur frontend.">
 	
-	<meta name="keywords" content="portfolio, bts sio, webdev, development, webdesigner, frontenddev, frontend">
+	<meta name="keywords" content="devlog, devblog, blog tech, tech, frontend, portfolio, bts sio, webdev, development, webdesigner, frontenddev, frontend">
 
 	<link rel="icon" type="image/png" href="favicon.png">
 
-	<meta name="twitter:title" content="Manerr's Portfolio, junior frontend dev and programmer. ">
+	<meta name="twitter:title" content="Portfolio et blog. Paul T_, développeur frontend.">
 	<meta name="twitter:creator" content="@Manerr">
 	<meta name="twitter:site" content="manerr.github.io">
-	<meta name="twitter:description" content="You'll find here some of my projects and links to my social medias.">
 
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="mediaquery.css" />
+	<script type="text/javascript">
+		onunload = function(){
+			scrollTo(0,0);
+			return false;
+		}
+		if(window.history.scrollRestauration){
+			window.history.scrollRestauration = "manual";
+			scrollTo(0,0);
+		}
+
+	</script>
 
 </head>
-<body>
+<body class="nightmode">
+
+	<script type="text/javascript" src="onloadlights.js"></script>
 
 
+	<header>
 
-	
-	<header id="floatingheader" class="hidden">
-		<nav class="header-links">
-			<img src="images/favicon.png" class="logonav" alt="Manerr's logo"/><span>Manerr</span>
-			<a href="index_fr.html" class="buttonlink firstbuttonlink" title="Switch to French?"><img src="images/fr.png" width="64" height="48" alt="french lang" /> </a>
-			<a href="https://github.com/Manerr" class="buttonlink" title="Github page"><img src="images/logogithub.png" alt="Github's logo" width="48" height="48"> </a>
-			<a href="https://youtube.com/@Manerr" class="buttonlink"><img src="images/logoyoutube.png" alt="Youtube's logo" title="Youtube channel" width="48" height="48"> </a>
-		</nav>
-	</header>
-
-
-
-
-
-
-<div id="mainbox-flex">
-	
-	<main>
-
-	<header id="header">
-		<nav class="header-links">
-			<img src="images/favicon.png" class="logonav" alt="Manerr's logo"/><span>Manerr</span>
-			<a href="index_fr.html" class="buttonlink firstbuttonlink" title="Switch to French?"><img src="images/fr.png" width="64" height="48" alt="french lang" /> </a>
-			<a href="https://github.com/Manerr" class="buttonlink" title="Github page"><img src="images/logogithub.png" alt="Github's logo" width="48" height="48"> </a>
-			<a href="https://youtube.com/@Manerr" class="buttonlink"><img src="images/logoyoutube.png" alt="Youtube's logo" title="Youtube channel" width="48" height="48"> </a>
-		</nav>
-	</header>
-
+		<div>
 		
-		<h1 id="hi">
-			Frontend <span class="bluecolor">dev</span>, programmer and <span class="redcolor">music</span> maker.
-		</h1>
-
-		<p id="description">
+		<h2>
 			
-			I design and code beautifully simple things, and I love what I do.<br>
-			Feel free to check my projects and my profile<span id="move">👇</span>
+			<a href="javascript:void(0)" id="homebutton">Manerr</a>
+			
+		</h2>
+
+		<nav>
+				
+			<a href="javascript:void(0)" id="accueilbutton">Accueil</a>
+			<a href="javascript:void(0)" id="aboutbutton">Parcours</a>
+			<a href="javascript:void(0)" id="projectsbutton">Projets</a>
+			<a href="javascript:void(0)" id="blogbutton">Blog</a>
+			<!-- <a href="" id="contactbutton">Contact</a> -->
+			<a href="javascript:void(0)" id="changestyle"><img src="resources/darkmode.svg" /></a>
+
+		</nav>
+
+		</div>
+
+	</header>
+
+	
+	<section class="screenpage" id="page1">
+		<main>
+				
+		<h2 class="title">Paul Thorel<span>_</span></h2>
+
+		<p class="desc">
+			
+			Développeur web frontend, Python & C#.<br/>
+			Étudiant en BTS SIO option SLAM 2ème année.
 
 		</p>
 
-		<nav id="twolinks">
-			<a href="#intro" id="click1">About me </a>
-			<a href="#projects" id="click2">Projects</a>
-		</nav>
+
+		<div class="hundred">
+			
+			<a href="javascript:void(0);" id="jumper1" class="jumper"><span>Mon parcours / CV</span><span><img src="resources/arrow.svg" /></span></a>
+
+		</div>
 
 	</main>
+	</section>
 
-</div>
+	<section class="screenpage" id="page2">
+		<article id="whoami">
+		
+		<h2 class="title">Mon parcours<span>_</span></h2>
 
-
-<section id="intro">
-<article>
-
-		<h2>Hi, I'm Paul, a french <span class="bluecolor">IT</span> student. Nice to meet you.</h2> 
-	<p>
-		Junior <span class="bluecolor">front-end</span> <span class="redcolor">dev</span> since some years, I'm currently making <span class="redcolor">IT</span> studies as a Bac+2 (<span class="redcolor">BTS SIO</span>).<br/>
-		Open for <span class="redcolor">hiring</span>. Polyvalent and open-minded, I will able to work on a large palette of IT topics,<br/>
-		from <span class="bluecolor">cybersecurity</span> to <span class="bluecolor">UI</span> design.<br/><br/>
-		I've been working on different types of hardware and <span class="redcolor">softwares</span> (RPi, Arduino, Web, calculators, etc), with a lot of different languages: <span class="redcolor">CSharp</span>, <span class="bluecolor">Python</span>, <span class="redcolor">JavaScript</span>, <span class="bluecolor">C++</span>, and tools like <span class="redcolor">SQL</span> or <span class="bluecolor">Github.</span><br/>
+	<p class="desc">
+		<span class="redcolor">Développeur</span> <span class="bluecolor">frontend</span> depuis plusieurs années, je suis actuellement un <span class="redcolor btscolor">BTS SIO</span> au CNED, en deuxième année.<br/>
+		
+		J'aime aussi bien travailler sur des aspects comme l'<span class="bluecolor">UI</span> (interface utilisateur), la sécurité d'applications ou la <span class="bluecolor">SEO</span>.<br/><br/>
+		Ces connaissances ont été acquises durant mes études en <span class="redcolor">BTS SIO</span> et également par ma propre initiative en essayant de mettre en place des <span class="bluecolor">solutions</span>.<br/>
+		J'ai ainsi utilisé plusieurs langages: <span class="redcolor">C#</span>, <span class="bluecolor">Python</span>, <span class="redcolor">JavaScript</span>, <span class="bluecolor">C</span>, et outils comme <span class="redcolor">SQL</span>, <span class="bluecolor">SSH</span> ou encore <span class="redcolor">Github.</span><br/>
 		<br/>
-		I've discovering programming at 15 on a programmable <span class="bluecolor">calculator</span>, and since that time I've been always trying to make new things and learn new working <span class="redcolor">patterns</span>.<br/>		Some of those <span class="redcolor">projects</span> are finished, so feel free to check my <a href="https://github.com/Manerr" class="bluecolor">GitHub</a> ;) .  
+		<!-- Par ailleurs, j'effectue pour mon cursus une <span class="redcolor">veille informatique</span>, sur le sujet de l'impact de l'<span class="bluecolor">IA</span> dans le secteur de l'informatique et de la programmation. (Disponible dans mon blog).<br/> -->
+		<br/>
+		Enfin, je suis également <span class="redcolor">producer</span> (de synthwave) à mes heures perdues,et un grand <span class="bluecolor">lecteur</span>.
 	</p> 
 
+		<div class="hundred">	
+			<a href="javascript:void(0);" id="jumper2" class="jumper reverted"><span><img src="resources/arrow.svg" /></span><span> Accueil</span></a>
+			<a href="https://github.com/Manerr" id="jumper99" class="jumperrotate jumper"><span>Parcours pro </span><span class="anim"><img src="resources/arrow.svg" /></span></a>
 
-	
+			<a href="https://github.com/Manerr" id="jumper98" class="jumperrotate jumper"><span>CV </span><span><img src="resources/arrow.svg" /></span></a>
 
-</article>
-</section>
+			<a href="javascript:void(0);" id="jumper3" class="jumper"><span>Projets </span><span><img src="resources/arrow.svg" /></span></a>
 
-
-
-
-
-<section class="box" id="projects">
-	<article>
-		
-	<h2 class="abouttitle">
-		
-	<span>✍️Projects and work📜</span>
-	</h2>
-
-	<ul>
-
-	<li class="project-box">
-		<a href="https://manerr.github.io/SquareMusic/">
-				<figure><img src="images/squaremusic.webp" class="project-image" alt="A screenshot of a video game" width="256" height="256" /></figure>
-				<div class="project-description">
-					<span class="project-title" >Square Music<sup>↗</sup></span>
-					<p class="project-text"><span class="redcolor">Responsive</span> product page template for your shop.</p>
-				</div>
-		</a>
-	</li>
-
-	<li class="project-box">
-		<a href="https://github.com/Manerr/Pyxio">
-				<figure><img src="images/game1.png" class="project-image" alt="A screenshot of a video game" width="256" height="256" /></figure>
-				<div class="project-description">
-					<span class="project-title" >Pyxio<sup>↗</sup></span>
-					<p class="project-text">A simple <span class="redcolor">HTML5</span> game that could fit in 13kb, still WIP.</p>
-				</div>
-		</a>
-	</li>
-
-	<li class="project-box">
-		<a href="https://github.com/Manerr/JSGol">
-				<figure><img src="images/jsgol.png" class="project-image" alt="A screenshot of a web app" width="256" height="256"/></figure>
-				<div class="project-description">
-					<span class="project-title" >JSGol<sup>↗</sup></span>
-					<p class="project-text">An old Conway's Game of Life cellular automaton I've made with vanilla <span class="redcolor">JS</span></p>
-				</div>
-		</a>
-	</li>
-
-	
-	</ul>
-
-		<a href="" id="checkit"><img src="images/logogithub.png" alt="Github's logo" width="48" height="48" />More on GitHub</a>
-
+		</div>
 
 
 	</article>
-</section>
+
+	</section>	
 
 
-
-<footer>
-
-	<p>Resetting knowledge & leveling up one day at a time.</p>
+	<section class="screenpage" id="page3">
+		<article id="projects" class="screenpageinner">
 		
-		<nav id="nav2">
-			<a href="https://github.com/Manerr" class="buttonlink"><img src="images/logogithub.png" alt="Github's logo" width="48" height="48"> </a>
-			<a href="https://www.linkedin.com/in/paul-thorel-5632492a4/" class="buttonlink"><img src="images/logolinkedin.png" alt="Linkedin's logo" width="48" height="48"> </a>
-			<a href="https://youtube.com/@Manerr" class="buttonlink"><img src="images/logoyoutube.png" alt="Youtube's logo" width="48" height="48"> </a>
-		</nav>
+		<h2 class="title">Projets<span>_</span></h2>
 
-	<p id="copy">All right reserved <span class="bluecolor">Paul T_</span> aka <span class="redcolor">Manerr</span> 2023-2024</p>
+	<p class="desc">
+		Dans le cadre de mon cursus, mais aussi en tant hobby, j'ai travaillé sur plusieurs projets et plusieurs réalisations professionnelles. 
+		<br/>
+		<!-- <a href="https://github.com/Manerr" class="bluecolor">https://github.com/Manerr</a><sup>↗</sup> -->
+
+		<ul>
+
+			
+			<li><a href="https://github.com/Manerr/Bankamaticks">
+				<img src="resources/ode.png"/>
+				<span>ODE 91 : Plateforme de stage<br/>Milliweb pour le département de l'Essonne </span>
+			↗</a></li>
 
 
-</footer>
-<div id="scroll_cool"></div>
 
-<script type="text/javascript" src="script.js" defer></script>
+			<li><a href="https://github.com/Manerr/Bankamaticks">
+				<img src="resources/bankamaticks.png"/>
+				<span>Bankamaticks : Template Web bancaire</span>
+			↗</a></li>
+			<li><a href="https://github.com/Manerr/Square Music">
+				<img src="resources/squaremusic.png"/>
+				<span>Square Music : Template Web E-Shopping</span>
+			↗</a></li>
+
+			<li><a href="https://github.com/Manerr/Pyxio">
+				<img src="resources/pyxio.png"/>
+				<span>Pyxio: A 13kb HTML5 Game</span>
+			↗</a></li>
+		</ul>
+
+
+	</p> 
+
+		<div class="hundred">	
+			<a href="javascript:void(0);" id="jumper4" class="jumper reverted"><span><img src="resources/arrow.svg" /></span><span> About me</span></a>
+			<a href="https://github.com/Manerr" id="jumper0" class="jumperrotate jumper"><span>Github </span><span><img src="resources/arrow.svg" /></span></a>
+			<a href="javascript:void(0);" id="jumper5" class="jumper"><span>Blog </span><span><img src="resources/arrow.svg" /></span></a>
+
+		</div>
+
+
+	</article>
+
+
+
+
+
+
+	</section>	
+
+	<section class="screenpage" id="page4">
+		<article id="blog">
+		
+		<h2 class="title">Blog et plus<span>_</span></h2>
+
+	<p class="desc">
+		Ici, vous trouverez des articles de mon blog (en anglais!). Bonne lecture :).
+	</p> 
+		<a href="articles/articlegb.html" class="desc">Programming on a 30 years old hardware.</a>
+
+		<div class="hundred">	
+			<a href="javascript:void(0);" id="jumper6" class="jumper reverted"><span><img src="resources/arrow.svg" /></span><span> Projects</span></a>
+			<a href="javascript:void(0);" id="jumper7" class="jumper"><span>Go to home </span><span><img src="resources/arrow.svg" /></span></a>
+
+		</div>
+
+
+	</article>
+	</section>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="script.js" defer="defer">
+</script>
+
 
 </body>
 
