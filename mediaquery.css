@@ -48,9 +48,9 @@
 		font-size: 1.08rem;
 	}
 
-	#page2{
+	/*#page2{
 		padding-top: 7vh;
-	}
+	}*/
 	.jumper{
 		font-size: 1.23rem;
         margin: .3rem;
@@ -71,16 +71,16 @@
 
 
 
-	#page3{
+	/*#page3{
 		padding-top: 7vh;
 	}
-
+*/
 
 	header h2 {
 		margin-left: .4rem;
 	}
 	header nav{
-		margin-right: .4rem;
+		margin-right: 0px;
 	}
 
 
