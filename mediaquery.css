@@ -30,7 +30,7 @@
 	}
 
 	body header{
-/*		padding-top: 1rem;*/
+		padding-top: 1rem;
 	}
 
 	header h2 {
@@ -74,6 +74,9 @@
 		font-size: 1.48rem;
 	}
 
+	body header{
+		padding-top: .75rem;
+	}
 
 
 	/*#page3{
