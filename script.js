@@ -32,6 +32,7 @@ function jumptoHomeP2(e){
 	page1.style.opacity = "1";
 	CURRENT_PAGE = 1;
 	scrollTo(0,0);
+	
 }
 
 function jumptoProjectsP2(e){

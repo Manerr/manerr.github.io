@@ -20,6 +20,15 @@
 
 @media screen and ( max-width: 40rem ){
 
+	body #page2,body #page3{
+		display: block;
+	}
+
+	body #page2  .title,body #page3 .title{
+		padding-top: 5vh;
+	}
+
+
 	body #homebutton{
 		font-size: 1.56rem;
 	}
@@ -57,7 +66,7 @@
 	}
 
 	.title{
-		margin-top: 20vh;
+/*		margin-top: 20vh;*/
 	}
 
 
