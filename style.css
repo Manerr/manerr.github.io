@@ -33,6 +33,16 @@
 }
 
 
+html,
+body,
+body > section{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 /**{animation-timing-function:  steps(30) !important;transition-timing-function: steps(5);
 	transition-timing-function: steps(30) !important;
 }*/
