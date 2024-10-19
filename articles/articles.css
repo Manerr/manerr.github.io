@@ -14,7 +14,8 @@ main,article{
 
 
 .screenpage{
-/*	position: static;*/
+	display: block;
+	min-height: 100%;
 }
 
 .date{
