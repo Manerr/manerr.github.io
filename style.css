@@ -664,7 +664,7 @@ a.buttonlink:hover{
 	image-rendering: pixelated;
 }
 
-body.daymode #projects a img{
+body.daymode #projects ul img{
 	filter: invert(100%);
 }
 
