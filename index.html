@@ -20,16 +20,7 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="mediaquery.css" />
-	<script type="text/javascript">
-		onunload = function(){
-			scrollTo(0,0);
-			return false;
-		}
-		if(window.history.scrollRestauration){
-			window.history.scrollRestauration = "manual";
-			scrollTo(0,0);
-		}
-
+	<script type="text/javascript" src="onloadscroll.js">
 	</script>
 
 </head>
@@ -181,6 +172,7 @@
 	<p class="desc">
 		Ici, vous trouverez des articles de mon blog (en anglais!). Bonne lecture :).
 	</p> 
+		<a href="articles/articleperf.html" class="desc">Small code and performances.</a>
 		<a href="articles/articlegb.html" class="desc">Programming on a 30 years old hardware.</a>
 
 		<div class="hundred">	

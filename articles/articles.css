@@ -72,3 +72,19 @@ footer{
 .hundred{
 	justify-content: flex-start;
 }
+
+p a{
+	color: #0fd;
+}
+
+.daymode p a{
+	color: #0ad;
+	filter: invert(100%);
+
+}
+
+pre{
+	padding: .5rem;
+	border: 1px solid #777;
+	border-radius: .6rem;
+}

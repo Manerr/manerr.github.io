@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>manerr.github.io Blog - Does small code means performance?</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="author" value="Manerr">
+	<meta name="description" content="Blog article - Does small code means performance? - manerr.github.io">
+	<meta name="og:description" content="Blog article - Does small code means performance? - manerr.github.io">
+
+	<meta itemprop="name" content="Blog article - Does small code means performance? - manerr.github.io">
+	
+	<meta name="keywords" content="code, ai, devlog, performance, chatgpt, ai performance, portfolio, bts sio, webdev, development, webdesigner, frontenddev, frontend">
+
+	<link rel="icon" type="image/png" href="../favicon.png">
+
+	<meta name="twitter:title" content="Blog article - Does small code means performance? - manerr.github.io">
+	<meta name="twitter:creator" content="@Manerr">
+	<meta name="twitter:site" content="manerr.github.io">
+
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" type="text/css" href="articles.css" />
+	<link rel="stylesheet" type="text/css" href="../mediaquery.css" />
+	<script type="text/javascript" src="../onloadscroll.js">
+	</script>
+
+</head>
+<body class="nightmode">
+
+	<script type="text/javascript" src="../onloadlights.js"></script>
+
+
+	<header>
+
+		<div>
+		
+		<h2>
+			
+			<a href="../index.html" id="homebutton">Manerr</a>
+			
+		</h2>
+
+		<nav>
+				
+			<a href="javascript:void(0)" id="changestyle"><img src="../resources/darkmode.svg" /></a>
+
+		</nav>
+
+		</div>
+
+	</header>
+
+	
+
+
+
+
+
+
+	</section>	
+
+	<section class="screenpage" id="article">
+		<article id="blog">
+		
+		<h2 class="title">Small code versus performance<span>_</span></h2>
+		<p class="date">20/12/2024</p>
+
+	<p class="desc">
+		<b>Chatgpt</b> and other "<i>generative</i>" AIs are now the common choice when you want to "work <b>faster</b>", especially in programming.<br/>
+		<br/>
+	</p> 
+<!-- 	<figure class="articleimage">
+		<img src="articlegb1.webp"/>
+		<figcaption>The first real portable game handheld.</figcaption>
+	</figure>
+ -->
+	<p class="desc">
+		Well, sometimes, it does the job and sometimes it doesnt.<br/><br/><br/>
+		Let's ask him to write its own version of some code I use in my npm library (<a href="https://www.npmjs.com/package/randomiz">https://www.npmjs.com/package/randomiz</a>) <br/>
+		And don't forget to never ask for performance, because it generally purpose you to change your programming language (valid option but worst possible move).<br/>
+	</p>
+	<p class="desc">
+		Here's what I got after a few prompt (a randomized matrix generator):
+	</p>
+
+		<pre>
+function randMat(rows,cols,mix,max){
+	return Array.from( { length: rows },() => Array.from({ length: cols}, () => randInt(mix,max)) );
+}		</pre>
+	<p class="desc">
+		What does that code do (don't take a look at randInt, since it's not very important -> you'll see) ?<br/>
+		Well, it creates an array from an anonymous function that returns itself an array filled of randInt(min,max) value.<br/>
+		Pretty compressed and pro looking, is'nt it?<br/>
+		Well, compared to <b>my</b> code, you'll think that:<br/>
+	</p>
+
+		<pre>
+function randMat(rows,cols,mix,max){
+	let l = new Array(rows);
+	for ( var x = 0; x < rows; x++){
+		l[x] = new Array(cols);
+		for ( var y = 0; y < cols; y++){
+			l[x][y] = randInt(mix,max);	
+		}
+	}
+	return l;
+}		</pre>
+	<p class="desc">	
+	Mine looks... well, pretty noob.<br/>
+	But what if we compare them on <b>performances</b>?<br/>
+	Well, with only 1 call, you can't really monitor differences (thanks to nodeJS's speed).<br/>
+	With 100'000 calls, and a 20*20 matrix (randMat(20,20,0,255)), I got that: 
+	3500ms for the chatgpt's optmized one, and 550ms for mine. Why?<br/>
+	Well, because the chatgpt's code constructs Arrays with functions returning Arrays, while mine just fills them incrementally (the noob way).<br/>
+	I'm not an expert of JS and V8 (most use JS runtime), but I'm sure that's the difference.
+	</p>
+	<p class="desc">
+		In conclusion... let's say that small code doesn't mean fast, and it's not because you can read it faster that the computer is gonna do it faster too... the old basic for loop is still capable of things you don't know. (except the python one which is iterating a "list" when you call range() :) ).<br/>
+		Have a nice day!
+
+	</p>
+
+
+
+
+<!-- 	<figure class="articleimage">
+		<img src="articlegb2.webp"/>
+		<figcaption>Sometimes color is not important.</figcaption>
+	</figure>
+ -->
+
+		<div class="hundred">	
+			<a href="../index.html" id="jumper" class="jumper reverted"><span><img src="../resources/arrow.svg" /></span><span> Home</span></a>
+		</div>
+
+
+	</article>
+
+		<footer>
+			<p class="desc">
+				All rights reserved Paul.T_ a.k.a Manerr &copy; 2023-2024
+			</p>
+		</footer>
+
+	</section>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../scriptarticle.js" defer="defer">
+</script>
+
+
+</body>
+
+
+
+</html>
