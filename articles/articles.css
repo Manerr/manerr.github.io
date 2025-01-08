@@ -87,4 +87,5 @@ pre{
 	padding: .5rem;
 	border: 1px solid #777;
 	border-radius: .6rem;
+	overflow-x: scroll;
 }
