@@ -1,0 +1,198 @@
+
+
+
+@font-face{
+
+	font-family: "adventpro";
+	src : url("fonts/adventpro.ttf");
+}
+
+
+@font-face{
+
+	font-family: "dmsans";
+	src : url("fonts/novasans.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+body{
+	background-color: #121212;
+	min-height: 100vh;
+	margin: 0;
+	color: #fafaff;
+	padding: .9rem;
+	box-sizing: border-box;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+.box{
+	background-color: #1e1e1f;
+	padding: .7rem;
+	border-radius: .8rem;
+}
+
+.info{
+	display: inline-block;
+
+	margin-right: 1rem;
+	text-align: center;
+}
+
+#title{
+
+	font-family: "adventpro";
+	margin: 0px;
+	margin-top: 1.2rem;
+	letter-spacing: .1rem;
+	font-size: 1.86rem;
+	line-height: 90%;
+	font-weight: 100;
+	display: flex;
+	flex-direction: column;
+}
+
+.descbox{
+	display: inline-block;
+	margin-top: 1.05rem;
+	background-color: #2b2b2f;
+	font-weight: 100;
+	padding: .3rem .5rem;
+	border-radius: .5rem;
+	font-size: .9rem;
+	font-family: "dmsans";
+}
+
+.skills{
+	padding: 0;
+	list-style-type: none;
+}
+
+.skill{
+	font-size: .75rem;
+	font-family: "dmsans";
+	font-weight: 100;
+	color: #fff;
+	background-color: #2b2b2f;
+	padding: .3rem .5rem;
+	border-radius: .5rem;
+	width: 80%;
+	margin: .8rem auto;
+	box-shadow: 0 0 .2rem #111,2.02rem 1.8rem .2rem -2rem turquoise inset;
+	cursor: pointer;
+}
+
+
+
+.main-part{
+	flex: 1;
+	max-width: 40rem !important;
+}
+
+.underlined{
+	position: relative;
+	font-family: "dmsans";
+	font-weight: 100;
+	font-size: 1.5rem;
+}
+
+.underlined::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -.4rem;
+	display: inline-block;
+	width: 3rem;
+	border-radius: 50%/1rem;
+	border: 2px solid turquoise;
+}
+
+#about-title{
+
+}
+
+
+.desc{
+	margin-top: 0px;
+    color: #d0d0d5;
+    font-family: "dmsans";
+    font-size: 1rem !important;
+    font-weight: 100;
+    letter-spacing: .15rem;
+}
+
+
+.redcolor{
+	color: #f96d65;
+}
+
+.bluecolor{
+	color: #5dfbf5;
+}
+
+.btscolor{
+	color: #5dfbf5;
+	font-size: 80%;
+}
+
+
+.projects-box{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-container{
+	list-style-type: none;
+
+}
+
+.project-container a{
+	padding: .4rem;
+	display: flex;
+	width: 12rem;
+	height: 12rem;
+	border-radius: .4rem;
+	flex-direction: column;
+	background-color: #272828;
+	text-decoration: none;
+	text-align: center;
+}
+
+.project-container h2{
+	margin: 0;
+}
+
+.project-container p{
+	margin: 0;
+	font-size: .8rem !important;
+}
+
+
+.project-logo{
+	border-radius: .7rem;
+	margin: auto auto;
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+/*	height: auto;*/
+}
+
+

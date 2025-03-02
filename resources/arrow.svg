@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 0 54.161 L 0 45.83 L 94.208 45.83 L 94.208 54.161 L 0 54.161 Z M 62.548 87.579 L 56.37 82.3 L 89.097 50.834 L 89.097 49.166 L 56.37 17.7 L 62.548 12.421 L 100 48.976 L 100 51.014 L 62.548 87.579 Z" style="fill: rgb(255, 255, 255); paint-order: stroke markers; stroke: rgba(206, 211, 218, 0); stroke-width: 4.39673px;" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)"/>
+  <path d="M 0 54.161 L 0 45.83 L 94.208 45.83 L 94.208 54.161 L 0 54.161 Z M 62.548 87.579 L 56.37 82.3 L 89.097 50.834 L 89.097 49.166 L 56.37 17.7 L 62.548 12.421 L 100 48.976 L 100 51.014 L 62.548 87.579 Z" style="fill: #50ebc9; paint-order: stroke markers; stroke: rgba(206, 211, 218, 0); stroke-width: 4.39673px;" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)"/>
 </svg>
