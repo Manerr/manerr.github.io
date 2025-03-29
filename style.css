@@ -1240,8 +1240,10 @@ footer p{
 @media all and (max-width: 50rem){
 	main{
 		flex-direction: column;
+		align-items: center;
 		width: 100%;
 	}
+
 
 
 	.main{
