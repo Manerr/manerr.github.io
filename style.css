@@ -22,13 +22,6 @@
 
 
 
-
-
-
-
-
-
-
 /*** GLOBAL STYLES ***/
 
 :root{
@@ -1127,7 +1120,7 @@ main{
 	margin-bottom: 0;
 }
 
-#proj,#socials{
+#proj,#socials,#exp-pro{
     margin-top: 7rem;
 }
 
@@ -1147,7 +1140,7 @@ main{
 .project-box a{
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	text-decoration: none;
 }
 
@@ -1218,6 +1211,7 @@ main{
 #socials li{
 	width: unset;
 }
+
 
 
 footer {

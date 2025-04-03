@@ -1,0 +1,139 @@
+@font-face{
+
+    font-family: "adventpro";
+    src : url("fonts/adventpro.ttf");
+}
+
+
+@font-face{
+
+    font-family: "novasans";
+    src : url("fonts/novasans.ttf");
+}
+
+
+@font-face{
+
+    font-family: "dmsans";
+    src : url("fonts/dmsans.ttf");
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'novasans', sans-serif;
+    font-weight: 100;
+}
+body {
+    background: #121212;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 20px;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #1c1c1c;
+    padding: 20px;
+    padding-top: 5rem !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-family: "novasans";
+    text-align: justify;
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: .15rem;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.section {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    background: #2c3e50;
+    border-radius: 5px;
+}
+h2 {
+    color: #45b3ff;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+h3 {
+    color: #45b3ff;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: .54rem;
+}
+
+li{
+    margin: .18rem 0;
+    letter-spacing: .3px;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 0.95em;
+    list-style-type: disc;
+}
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: white;
+    background: #3498db;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.links a:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+
+.links-top{
+    position: absolute;
+    top: .3rem;
+    left:.3rem;
+}
+
+.links-top a::before{
+    content: "⬅ ";
+}
+
+video{
+    max-width: 100%;
+    border-radius: .3rem;
+    margin: .8rem 0px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        padding-top: 5.5rem !important;
+    }
+
+    body{
+        padding: 4px;
+    }
+}

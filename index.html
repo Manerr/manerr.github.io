@@ -25,7 +25,7 @@
 	</script>
 
 </head>
-<body class="nightmode">
+<body class="nightmode" id="start">
 
 	<!-- <script type="text/javascript" src="onloadlights.js"></script> -->
 
@@ -77,7 +77,7 @@
 
 		<div class="new-nav">
 			
-			<a href="#whoami" id="jumper1" class="jumper"><span>A propos</span><span class="centersvg"><img src="resources/arrow.svg" /></span></a>
+			<a href="#start" id="jumper1" class="jumper"><span>A propos</span><span class="centersvg"><img src="resources/arrow.svg" /></span></a>
 			<a href="#exp" id="jumper1" class="jumper"><span>Expérience</span><span class="centersvg"><img src="resources/arrow.svg" /></span></a>
 			<a href="#proj" id="jumper1" class="jumper"><span>Projets</span><span class="centersvg"><img src="resources/arrow.svg" /></span></a>
 
@@ -87,11 +87,11 @@
 				<a href="" class="socials filter">
 					<img src="resources/linkedin.png" alt="linkedin's logo"/>
 				</a>
-				<a href="" class="socials filter">
+				<a href="https://github.com/manerr/" class="socials filter">
 					<img src="resources/github.svg" alt="github's logo"/>
 						
 				</a>
-				<a href="" class="socials filter">
+				<a href="https://youtube.com/@Manerr" class="socials filter">
 					<img src="resources/youtube.svg" alt="youtube's logo"/>
 				</a>
 			</div>
@@ -135,7 +135,7 @@
 		</div>
 
 		<div class="exp-before"></div>
-		<div class="exp-box">
+		<a href="#stage2" class="exp-box">
 			
 			<div class="exp-date">
 				FÉV 2025<br/>-<br/>MAR 2025
@@ -148,9 +148,9 @@
 				</p>
 
 			</div>
-		</div>
+		</a>
 		<div class="exp-before"></div>
-		<div class="exp-box">
+		<a href="#stage1" class="exp-box">
 
 			<div class="exp-date">
 				JUIL 2024<br/>-<br/>AOUT 2025
@@ -164,7 +164,7 @@
 
 			</div>
 
-		</div>
+		</a>
 		<div class="exp-before"></div>
 
 		<div class="exp-box">
@@ -186,15 +186,43 @@
 
 	</article>
 
+
+	<article id="exp-pro">
+		<div class="title-zone">
+			<h3 class="title smaller">Détail des stages</h3>
+		</div>
+		<ul>
+			<li class="exp-box project-box" id="stage2"><a href="stage2/">
+				<img src="img/milliweb.webp" preload/>
+				<div class="exp-desc">
+
+					<h3>Stage de deuxième anéee <span class="arrow">↗</span></h3>
+					<p>Développeur fullstack - PHP - SQL - LINUX - JS</p>
+
+				</div>
+			</a></li>
+			<li class="exp-box project-box" id="stage1"><a href="stage1/">
+				<img src="img/milliweb.webp" preload/>
+				<div class="exp-desc">
+
+					<h3>Stage de première année <span class="arrow">↗</span></h3>
+					<p>Développeur frontend - SEO - CSS - JS</p>
+
+				</div>
+			</a></li>
+		</ul>
+	</article>
+
+
 	<article id="proj">
 		<div class="title-zone">
-			<h3 class="title smaller">Projets</h3>
+			<h3 class="title smaller">Ateliers / Projets</h3>
 			<a href="https://github.com/Manerr" class="title-right-link jumper"><span>Github</span></a>
 			<a href="https://codepen.io/manerr" class="ml0 title-right-link jumper"><span>Codepen</span></a>
 		</div>
 		<ul>
 			<li class="exp-box project-box"><a href="mediatekdocuments/">
-				<img src="img/mediatekformation.webp" preload/>
+				<img src="img/mediatekdocuments.jpg" preload/>
 				<div class="exp-desc">
 
 					<h3>Mediatekdocuments <span class="arrow">↗</span></h3>
@@ -211,15 +239,17 @@
 
 				</div>
 			</a></li>
-			<li class="exp-box project-box"><a href="https://milliweb.fr">
-				<img src="img/milliweb.webp" preload/>
+
+			<li class="exp-box project-box"><a href="mediatek86/">
+				<img src="img/mediatek86.webp" preload/>
 				<div class="exp-desc">
 
-					<h3>Numériclasse <span class="arrow">↗</span></h3>
-					<p>Développement de fonctionnalités sur un portail éducatif</p>
+					<h3>Mediatek86 <span class="arrow">↗</span></h3>
+					<p>Application C# de gestion de personnel</p>
 
 				</div>
 			</a></li>
+			
 			<li class="exp-box project-box"><a href="https://neugen.vercell.app">
 				<img src="img/neugen.webp" preload/>
 				<div class="exp-desc">
@@ -238,59 +268,24 @@
 
 				</div>
 			</a></li>
-
-			<li class="exp-box project-box"><a href="https://milliweb.com">
-				<img src="img/milliweb.webp" preload/>
-				<div class="exp-desc">
-
-					<h3>ODE91 <span class="arrow">↗</span></h3>
-					<p>Portail des offres éducatives du département de l'Essonne</p>
-
-				</div>
-			</a></li>
-			<li class="exp-box project-box"><a href="mediatek86/">
-				<img src="img/mediatek86.webp" preload/>
-				<div class="exp-desc">
-
-					<h3>Mediatek86 <span class="arrow">↗</span></h3>
-					<p>Application C# de gestion de personnel</p>
-
-				</div>
-			</a></li>
 		</ul>
 
 
 	</article>
 
-
-
-<!-- 	<article id="articles">
+	<article id="proj">
 		<div class="title-zone">
-			<h3 class="title smaller">Projets</h3>
-			<a href="" class="title-right-link jumper"><span>Github</span></a>
-			<a href="" class="ml0 title-right-link jumper"><span>Codepen</span></a>
+			<h3 class="title smaller">Epreuves </h3>
 		</div>
 		<p class="desc">
-			J'essaie d'écrire des articles ou des billets (en anglais!) de temps à autre, sur des sujets variés, sur lesquels je travaille.<br/>
-			Bonne lecture ^^.
-		</p> 
 
-		<a href="articles/articleperf.html" class="article-link desc exp-box">
-			<h3>Small code and performances. <span class="arrow">↗</span></h3>
-			<div class="exp-date">
-				DEC 2024
-			</div>
-		</a>
-		<a href="articles/articlegb.html" class="article-link desc exp-box">
-			<h3>Programming on a 30 years old hardware. <span class="arrow">↗</span></h3>
-			<div class="exp-date">
-				OCT 2024
-			</div>
-		</a>
+			<a href="contexte/synthese.pdf" class="exp-box project-box">Fiche de synthèse E6 -  Tableau de synthèse des réalisations professionnelles </a>
+
+		</p>
 
 	</article>
 
- -->	</section>
+	</section>
 
 	<footer>
 		<p>
