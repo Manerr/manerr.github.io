@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIATekDocument - Application de Gestion de Médiathèque | Paul Thorel</title>
+    <meta name="description" content="Découvrez MEDIATekDocument, une application C# avec API REST pour la gestion des documents en médiathèque. Projet BTS SIO SLAM avec documentation complète.">
+    <meta name="keywords" content="MEDIATekDocument, gestion médiathèque, C#, API REST, BTS SIO, SLAM, application desktop, gestion documents">
+    <meta name="author" content="Paul Thorel">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://manerr.github.io/mediatekdocuments/">
+    <meta property="og:title" content="MEDIATekDocument - Application de Gestion de Médiathèque | Paul Thorel">
+    <meta property="og:description" content="Découvrez MEDIATekDocument, une application C# avec API REST pour la gestion des documents en médiathèque. Projet BTS SIO SLAM avec documentation complète.">
+    <meta property="og:image" content="https://manerr.github.io/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://manerr.github.io/mediatekdocuments/">
+    <meta name="twitter:title" content="MEDIATekDocument - Application de Gestion de Médiathèque | Paul Thorel">
+    <meta name="twitter:description" content="Découvrez MEDIATekDocument, une application C# avec API REST pour la gestion des documents en médiathèque. Projet BTS SIO SLAM avec documentation complète.">
+    <meta name="twitter:image" content="https://manerr.github.io/img/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://manerr.github.io/mediatekdocuments/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../project-pages.css"/>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <div>
+                <a href="../index.html" id="logoheader">Paul Thorel</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#about"><span>À propos</span></a></li>
+                <li><a href="../index.html#experience"><span>Expérience</span></a></li>
+                <li><a href="../index.html#projects"><span>Projets</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="links links-top">
+            <a href="../index.html">Retour à l'accueil</a>
+        </div>
+
+        <h1>MEDIATekDocument</h1>
+        <p>Application et API de gestion des documents pour une médiathèque</p>
+
+        <div class="section">
+            <h2>À propos</h2>
+            <p>MEDIATekDocument est un projet réalisé en deuxième année de BTS SIO (SLAM). L'objectif était de reprendre le travail d'un développeur sur une API utilisée par une médiathèque et d'y ajouter des fonctionnalités, tout en modifiant l'application cliente en C#.</p>
+            <p>Par exemple, l'application permet de modifier des documents et leur état.</p>
+        </div>
+
+        <div class="section">
+            <h2>Vidéo de démonstration</h2>
+            <p>Regardez la vidéo en plein écran pour voir les annotations explicatives.</p>
+            <video src="mediatekdocuments_soustitree.mp4" controls preload="metadata"></video>
+        </div>
+
+        <div class="section">
+            <h2>Liens relatifs</h2>
+            <div class="links">
+                <a href="https://github.com/Manerr/mediatekdocuments">Dépôt GitHub de l'application</a>
+                <a href="https://github.com/Manerr/rest_mediatekdocuments">Dépôt GitHub de l'API</a>
+                <a href="Rapport mediatekdocuments.pdf">Rapport PDF</a>
+                <a href="https://github.com/Manerr/MediaTekDocuments/releases/tag/release">Exécutable d'installation</a>
+                <a href="../contexte/contexte.pdf">Contexte</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Compétences acquises</h2>
+
+            <h3>Bloc 1 - Support et mise à disposition de services informatiques</h3>
+
+            <h4>B1.1 : Gérer le patrimoine informatique</h4>
+            <ul>
+                <li>Exploitation des référentiels, normes et standards</li>
+                <li>Gestion des habilitations et niveaux d'accès</li>
+            </ul>
+
+            <h4>B1.2 : Réponse aux incidents et demandes d'évolution</h4>
+            <ul>
+                <li>Ajout de nouvelles fonctionnalités et améliorations sur des projets existants</li>
+            </ul>
+
+            <h4>B1.4 : Travail en mode projet</h4>
+            <ul>
+                <li>Analyse des objectifs et organisation du projet</li>
+                <li>Planification et suivi des tâches</li>
+                <li>Évaluation des écarts et ajustements</li>
+            </ul>
+
+            <h4>B1.5 : Mise à disposition des utilisateurs d'un service informatique</h4>
+            <ul>
+                <li>Modification et déploiement d'une application pour les utilisateurs</li>
+            </ul>
+
+            <h4>B1.6 : Organiser son développement professionnel</h4>
+            <ul>
+                <li>Développement du projet professionnel</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Paul Thorel 2023-2025 ©</p>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('.main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 2px 10px var(--shadow-color)';
+            } else {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+\doxysection{MEDIA86.\+Controleur.\+Controleur Class Reference}
+\hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur}{}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+
+
+Classe/objet unique représentant le controleur , qui agit entre les actions de l\textquotesingle{}utilisateur et la gestion/accès des données.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a382b679dae4c9634552ffa221c67901e}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a382b679dae4c9634552ffa221c67901e} 
+{\bfseries Controleur} ()
+\begin{DoxyCompactList}\small\item\em Classe/objet unique représentant le controleur , qui agit entre les actions de l\textquotesingle{}utilisateur et la gestion/accès des données. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a9c24eb9e5c60ae5130374778deb49ee3}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a9c24eb9e5c60ae5130374778deb49ee3} 
+void {\bfseries Open\+Login\+Window} ()
+\begin{DoxyCompactList}\small\item\em Ouvre la fenêtre de connexion Appelé par défaut lors de l\textquotesingle{}éxecution de l\textquotesingle{}app. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a63dd60cbb0c086d67ebc4da71f503cff}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a63dd60cbb0c086d67ebc4da71f503cff} 
+void {\bfseries Create\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Ouvre la fenêtre principale. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ad2367d70b8d2a0931a25ee5a9d5aac43}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ad2367d70b8d2a0931a25ee5a9d5aac43} 
+void {\bfseries Nettoyer\+Data} ()
+\begin{DoxyCompactList}\small\item\em Efface le tableau pour le reremplir. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a6fed2d5024de354f38c0059f2ebf6e30}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a6fed2d5024de354f38c0059f2ebf6e30} 
+void {\bfseries Afficher\+Data} ()
+\begin{DoxyCompactList}\small\item\em Affiche les données dans le tableau. \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac22b20a442e2e543ebd3be3b6da0314e}{Controle\+Authentification}} (string login, string pwd)
+\begin{DoxyCompactList}\small\item\em Controle la connexion et renvoie un booléen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a1f9f243373538c147c3ee5812b8e320b}{Ligne\+Selectionnee}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelé lorsqu\textquotesingle{}une ligne (une personne) est sélectionnée. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a33a0d45fd76129b011e9b9270808f8df}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a33a0d45fd76129b011e9b9270808f8df} 
+void {\bfseries Afficher\+Button\+Absences} ()
+\begin{DoxyCompactList}\small\item\em Affiche (ou plutôt active) le bouton permettant d\textquotesingle{}afficher les absences. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_aad598892fa1779015b6ce60ceee2e656}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_aad598892fa1779015b6ce60ceee2e656} 
+void {\bfseries Cacher\+Button\+Absences} ()
+\begin{DoxyCompactList}\small\item\em Cache (ou plutôt désactive) le bouton permettant d\textquotesingle{}afficher les absences. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a90241a6309d4621212b8300eec22a764}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a90241a6309d4621212b8300eec22a764} 
+void {\bfseries Effacer\+Entry} ()
+\begin{DoxyCompactList}\small\item\em Effacer le formulaire de modification, lorsque par exemple on ajoute ou modifie un contact (pour éviter des erreurs) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a03f0587a88277fc812c743bdf5da506a}{Afficher\+Contenu\+Dans\+Entry}} (int index)
+\begin{DoxyCompactList}\small\item\em Affiche dans le formulaire de modification (à droite) Les données sélectionnées. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a911a2f5c1e5a2313a40781372b62eac5}{Ajouter\+Contact}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelle la modification des données quand l\textquotesingle{}utilisateur clique sur ajouter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ace1bad4bc0e691816095755212fa4d37}{Editer\+Contact}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelle la modification des données quand l\textquotesingle{}utilisateur clique sur modifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a909f3132289fff38d934b687a8e4020e}{Suppr\+Contact}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Procédure qui permet de supprimer la ligne sélectionnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a714ce78bb3c6563aa4d92f1daaeb64ae}{Afficher\+Fenetre\+Absences}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre des absences pour un personnel donné (récupéré dynamiquement avec view\+Appli) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af6eeabc58d8b2c143044a91728f7acca}{Fermer\+Absences}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Ferme la fenêtre des absences. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a630cb72d6bf1541bc2f09281137b40fe}{Afficher\+Data\+Absences}} (int id\+Personnel)
+\begin{DoxyCompactList}\small\item\em Remplit la fenêtre des absences avec un id donné -\/\texorpdfstring{$>$}{>} id du personnel sélectionné \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac0486ae49dc5e0816b8d6c5034684268}{Ligne\+Selectionnee}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui évite d\textquotesingle{}appeler une table non "{}séléctionnée"{} -\/ Pour une table d\textquotesingle{}absence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a0b5a639341376b17be5f310e3b731c96}{Afficher\+Absence\+Data\+Entry}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Affiche dans le formulaire à droite l\textquotesingle{}absence sélectionnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ae79e98b94f317782c52a4be7efa976cd}{Suppr\+Absence}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Suppression d\textquotesingle{}une absence, appellé par un événement utilisateur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a25164dd35e68d21676d7a5e5b29eea63}{Valider\+Date}} (Date\+Time datedebutabsence, Date\+Time datefinabsence, Date\+Time datedebutnouvelleabsence, Date\+Time datefinnouvelleabsence)
+\begin{DoxyCompactList}\small\item\em Donne la validité entre deux créneaux (si le nouveau, passé avec les deux derniers arguments est valide) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af8bfcf5785bb7f1ac844d6449832fd97}{Créneau\+Valide}} (Date\+Time debut, Date\+Time fin)
+\begin{DoxyCompactList}\small\item\em Vérifie que le créneau n\textquotesingle{}a pas une date de fin antérieure au début. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a27ce2e50eef0eb1282f47f61d90ecac4}{Ajouter\+Absence}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Modification d\textquotesingle{}une absence, appellée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a8519ef478ff34560fe5c6a0820454273}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a8519ef478ff34560fe5c6a0820454273} 
+void {\bfseries Editer\+Une\+Absence} (object sender, Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a18cb35d3d82802dea92ab601bb3d7333}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a18cb35d3d82802dea92ab601bb3d7333} 
+bool {\bfseries empty} = true
+\begin{DoxyCompactList}\small\item\em Variable peu utilisée pour savoir si le tableau est vide. \end{DoxyCompactList}\item 
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a679658288bc44dd9d7547467e1825558}\label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a679658288bc44dd9d7547467e1825558} 
+bool {\bfseries emptyabsences} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe/objet unique représentant le controleur , qui agit entre les actions de l\textquotesingle{}utilisateur et la gestion/accès des données. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a0b5a639341376b17be5f310e3b731c96}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AfficherAbsenceDataEntry@{AfficherAbsenceDataEntry}}
+\index{AfficherAbsenceDataEntry@{AfficherAbsenceDataEntry}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AfficherAbsenceDataEntry()}{AfficherAbsenceDataEntry()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a0b5a639341376b17be5f310e3b731c96} 
+void MEDIA86.\+Controleur.\+Controleur.\+Afficher\+Absence\+Data\+Entry (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Affiche dans le formulaire à droite l\textquotesingle{}absence sélectionnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ABSID} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a03f0587a88277fc812c743bdf5da506a}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AfficherContenuDansEntry@{AfficherContenuDansEntry}}
+\index{AfficherContenuDansEntry@{AfficherContenuDansEntry}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AfficherContenuDansEntry()}{AfficherContenuDansEntry()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a03f0587a88277fc812c743bdf5da506a} 
+void MEDIA86.\+Controleur.\+Controleur.\+Afficher\+Contenu\+Dans\+Entry (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Affiche dans le formulaire de modification (à droite) Les données sélectionnées. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a630cb72d6bf1541bc2f09281137b40fe}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AfficherDataAbsences@{AfficherDataAbsences}}
+\index{AfficherDataAbsences@{AfficherDataAbsences}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AfficherDataAbsences()}{AfficherDataAbsences()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a630cb72d6bf1541bc2f09281137b40fe} 
+void MEDIA86.\+Controleur.\+Controleur.\+Afficher\+Data\+Absences (\begin{DoxyParamCaption}\item[{int}]{id\+Personnel}{}\end{DoxyParamCaption})}
+
+
+
+Remplit la fenêtre des absences avec un id donné -\/\texorpdfstring{$>$}{>} id du personnel sélectionné 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Personnel} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a714ce78bb3c6563aa4d92f1daaeb64ae}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AfficherFenetreAbsences@{AfficherFenetreAbsences}}
+\index{AfficherFenetreAbsences@{AfficherFenetreAbsences}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AfficherFenetreAbsences()}{AfficherFenetreAbsences()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a714ce78bb3c6563aa4d92f1daaeb64ae} 
+void MEDIA86.\+Controleur.\+Controleur.\+Afficher\+Fenetre\+Absences (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Affiche la fenêtre des absences pour un personnel donné (récupéré dynamiquement avec view\+Appli) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a27ce2e50eef0eb1282f47f61d90ecac4}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AjouterAbsence@{AjouterAbsence}}
+\index{AjouterAbsence@{AjouterAbsence}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AjouterAbsence()}{AjouterAbsence()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a27ce2e50eef0eb1282f47f61d90ecac4} 
+void MEDIA86.\+Controleur.\+Controleur.\+Ajouter\+Absence (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Modification d\textquotesingle{}une absence, appellée par l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a911a2f5c1e5a2313a40781372b62eac5}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!AjouterContact@{AjouterContact}}
+\index{AjouterContact@{AjouterContact}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{AjouterContact()}{AjouterContact()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a911a2f5c1e5a2313a40781372b62eac5} 
+void MEDIA86.\+Controleur.\+Controleur.\+Ajouter\+Contact (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Appelle la modification des données quand l\textquotesingle{}utilisateur clique sur ajouter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac22b20a442e2e543ebd3be3b6da0314e}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!ControleAuthentification@{ControleAuthentification}}
+\index{ControleAuthentification@{ControleAuthentification}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{ControleAuthentification()}{ControleAuthentification()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac22b20a442e2e543ebd3be3b6da0314e} 
+Boolean MEDIA86.\+Controleur.\+Controleur.\+Controle\+Authentification (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{pwd}{}\end{DoxyParamCaption})}
+
+
+
+Controle la connexion et renvoie un booléen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+{\em pwd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af8bfcf5785bb7f1ac844d6449832fd97}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!CréneauValide@{CréneauValide}}
+\index{CréneauValide@{CréneauValide}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{CréneauValide()}{CréneauValide()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af8bfcf5785bb7f1ac844d6449832fd97} 
+bool MEDIA86.\+Controleur.\+Controleur.\+Créneau\+Valide (\begin{DoxyParamCaption}\item[{Date\+Time}]{debut}{, }\item[{Date\+Time}]{fin}{}\end{DoxyParamCaption})}
+
+
+
+Vérifie que le créneau n\textquotesingle{}a pas une date de fin antérieure au début. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em debut} & \\
+\hline
+{\em fin} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ace1bad4bc0e691816095755212fa4d37}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!EditerContact@{EditerContact}}
+\index{EditerContact@{EditerContact}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{EditerContact()}{EditerContact()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ace1bad4bc0e691816095755212fa4d37} 
+void MEDIA86.\+Controleur.\+Controleur.\+Editer\+Contact (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Appelle la modification des données quand l\textquotesingle{}utilisateur clique sur modifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af6eeabc58d8b2c143044a91728f7acca}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!FermerAbsences@{FermerAbsences}}
+\index{FermerAbsences@{FermerAbsences}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{FermerAbsences()}{FermerAbsences()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_af6eeabc58d8b2c143044a91728f7acca} 
+void MEDIA86.\+Controleur.\+Controleur.\+Fermer\+Absences (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Ferme la fenêtre des absences. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac0486ae49dc5e0816b8d6c5034684268}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!LigneSelectionnee@{LigneSelectionnee}}
+\index{LigneSelectionnee@{LigneSelectionnee}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{LigneSelectionnee()}{LigneSelectionnee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ac0486ae49dc5e0816b8d6c5034684268} 
+bool MEDIA86.\+Controleur.\+Controleur.\+Ligne\+Selectionnee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Fonction qui évite d\textquotesingle{}appeler une table non "{}séléctionnée"{} -\/ Pour une table d\textquotesingle{}absence. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a1f9f243373538c147c3ee5812b8e320b}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!LigneSelectionnee@{LigneSelectionnee}}
+\index{LigneSelectionnee@{LigneSelectionnee}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{LigneSelectionnee()}{LigneSelectionnee()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a1f9f243373538c147c3ee5812b8e320b} 
+void MEDIA86.\+Controleur.\+Controleur.\+Ligne\+Selectionnee (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Appelé lorsqu\textquotesingle{}une ligne (une personne) est sélectionnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ae79e98b94f317782c52a4be7efa976cd}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!SupprAbsence@{SupprAbsence}}
+\index{SupprAbsence@{SupprAbsence}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{SupprAbsence()}{SupprAbsence()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_ae79e98b94f317782c52a4be7efa976cd} 
+void MEDIA86.\+Controleur.\+Controleur.\+Suppr\+Absence (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Suppression d\textquotesingle{}une absence, appellé par un événement utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a909f3132289fff38d934b687a8e4020e}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!SupprContact@{SupprContact}}
+\index{SupprContact@{SupprContact}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{SupprContact()}{SupprContact()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a909f3132289fff38d934b687a8e4020e} 
+void MEDIA86.\+Controleur.\+Controleur.\+Suppr\+Contact (\begin{DoxyParamCaption}\item[{object}]{sender}{, }\item[{Event\+Args}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Procédure qui permet de supprimer la ligne sélectionnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a25164dd35e68d21676d7a5e5b29eea63}\index{MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}!ValiderDate@{ValiderDate}}
+\index{ValiderDate@{ValiderDate}!MEDIA86.Controleur.Controleur@{MEDIA86.Controleur.Controleur}}
+\doxysubsubsection{\texorpdfstring{ValiderDate()}{ValiderDate()}}
+{\footnotesize\ttfamily \label{class_m_e_d_i_a86_1_1_controleur_1_1_controleur_a25164dd35e68d21676d7a5e5b29eea63} 
+bool MEDIA86.\+Controleur.\+Controleur.\+Valider\+Date (\begin{DoxyParamCaption}\item[{Date\+Time}]{datedebutabsence}{, }\item[{Date\+Time}]{datefinabsence}{, }\item[{Date\+Time}]{datedebutnouvelleabsence}{, }\item[{Date\+Time}]{datefinnouvelleabsence}{}\end{DoxyParamCaption})}
+
+
+
+Donne la validité entre deux créneaux (si le nouveau, passé avec les deux derniers arguments est valide) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datedebutabsence} & \\
+\hline
+{\em datefinabsence} & \\
+\hline
+{\em datedebutnouvelleabsence} & \\
+\hline
+{\em finnouvelleabsence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pault/\+Desktop/\+PRO CODE HERE/\+VS/repos/\+MEDIATek86 -\/ V1/\+Controleur/Controleur.\+cs\end{DoxyCompactItemize}

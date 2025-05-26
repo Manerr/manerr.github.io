@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIATek 86 - Application de Gestion du Personnel | Paul Thorel</title>
+    <meta name="description" content="Découvrez MEDIATek 86, une application C# de gestion du personnel développée avec Visual Studio et MySQL. Projet BTS SIO avec documentation complète.">
+    <meta name="keywords" content="MEDIATek 86, gestion personnel, C#, Visual Studio, MySQL, BTS SIO, application desktop, gestion absences">
+    <meta name="author" content="Paul Thorel">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://manerr.github.io/mediatek86/">
+    <meta property="og:title" content="MEDIATek 86 - Application de Gestion du Personnel | Paul Thorel">
+    <meta property="og:description" content="Découvrez MEDIATek 86, une application C# de gestion du personnel développée avec Visual Studio et MySQL. Projet BTS SIO avec documentation complète.">
+    <meta property="og:image" content="https://manerr.github.io/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://manerr.github.io/mediatek86/">
+    <meta name="twitter:title" content="MEDIATek 86 - Application de Gestion du Personnel | Paul Thorel">
+    <meta name="twitter:description" content="Découvrez MEDIATek 86, une application C# de gestion du personnel développée avec Visual Studio et MySQL. Projet BTS SIO avec documentation complète.">
+    <meta name="twitter:image" content="https://manerr.github.io/img/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="canonical" href="https://manerr.github.io/mediatek86/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="../project-pages.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <div>
+                <a href="../index.html" id="logoheader">Paul Thorel</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#about"><span>À propos</span></a></li>
+                <li><a href="../index.html#experience"><span>Expérience</span></a></li>
+                <li><a href="../index.html#projects"><span>Projets</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+	<div class="links links-top">
+        <a href="../index.html">Retourner à l'accueil</a>
+    </div>
+
+    <h1>MEDIATek 86</h1>
+    <p>Application de gestion du personnel</p>
+
+    <div class="section">
+        <h2>À propos</h2>
+        <p>MEDIATek 86 est un projet réalisé en première année de BTS SIO. Il s'agit d'une application permettant de gérer le personnel et leurs absences.</p>
+        <p>Elle a été développée en C# avec Visual Studio 2022, en utilisant MySQL et PhpMyAdmin sur WampServer.</p>
+    </div>
+
+    <div class="section">
+        <h2>Vidéo de démonstration</h2>
+        <p>Regardez la vidéo en plein écran pour voir les annotations explicatives.</p>
+        <video src="video-mediatek86.mp4" controls preload="metadata"></video>
+    </div>
+
+    <div class="section">
+        <h2>Liens relatifs</h2>
+        <div class="links">
+            <a href="https://github.com/Manerr/MEDIATek86">Dépot GitHub</a>
+            <a href="Rapport-MediaTEK86.pdf">Rapport PDF</a>
+            <a href="e6.pdf">Feuille E6 PDF</a>            
+            <a href="https://manerr.github.io/mediatek86/Documentation/html/index.html">Documentation</a>
+            <a href="https://github.com/Manerr/MEDIATek86/releases/tag/v.1.0.2">Release MSI</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Compétences acquises</h2>
+
+        <h3>Bloc 1 - Support et mise à disposition de services informatiques</h3>
+        <ul>
+            <li>Exploitation des référentiels, normes et standards</li>
+            <li>Gestion des habilitations et niveaux d'accès</li>
+        </ul>
+
+        <h3>Bloc 1.4 - Travail en mode projet</h3>
+        <ul>
+            <li>Analyse des objectifs et organisation du projet</li>
+            <li>Planification et suivi des tâches</li>
+            <li>Évaluation des écarts et ajustements</li>
+        </ul>
+    </div>
+</div>
+
+    <footer>
+        <p>Paul Thorel 2023-2025 ©</p>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('.main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 2px 10px var(--shadow-color)';
+            } else {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
