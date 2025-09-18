@@ -31,7 +31,7 @@ html, body {
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
-	width: 0.525rem;
+	width: 0.6rem;
 	padding: 2px;
 
 }
@@ -40,6 +40,7 @@ html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
 	background: linear-gradient(var(--gradient-3));
 	background-clip: content-box;
 	box-sizing: border-box;
+	border: 2px solid transparent;
 }
 html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
