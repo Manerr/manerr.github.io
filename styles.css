@@ -246,10 +246,10 @@ body {
 	font-weight: 800;
 	margin-top: -.8rem;
 	letter-spacing: .5px;
-	background-image: unset !important;
-	background: linear-gradient(var(--gradient-3)) text !important;
+	background: linear-gradient(var(--gradient-3));
 	background-clip: text !important;
-
+	-webkit-background-clip: text !important;
+	color: transparent;
 }
 
 .hero h1{
@@ -269,6 +269,8 @@ body {
 .grad-text,.grad-text-2,.grad-text-3,.grad-text-4{
 	color: transparent !important;
 	background-clip: text !important;
+	-webkit-background-clip: text !important;
+
 }
 
 .grad-text{
