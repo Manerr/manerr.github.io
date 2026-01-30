@@ -1,0 +1,29 @@
+@media all and (max-width:719px) {
+    
+    #about{
+        flex-direction: column;
+    }
+
+    #about nav{
+        justify-content: center;
+    }
+
+    #footer-body{
+        gap: .75rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header{
+        display: none;
+    }
+
+}
+
+@media all and (min-width:720px) {
+
+    #experience,#projets{
+        padding-top: 2rem !important;
+    }
+
+}
